@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.CouponsActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_search_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_transparent"
+        android:paddingLeft="@dimen/d_pad_rv_coupons"
+        android:paddingRight="@dimen/d_pad_rv_coupons"
+        android:paddingTop="@dimen/d_pad_rv_coupons" />
+</LinearLayout>

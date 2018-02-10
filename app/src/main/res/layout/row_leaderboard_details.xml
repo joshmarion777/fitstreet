@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/rank"
+            android:textAllCaps="false"
+            android:textColor="@color/c_gray_text"
+            android:textSize="@dimen/txt_size_sp14" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+
+            android:id="@+id/tv_athlete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/athlete"
+            android:textAllCaps="false"
+            android:textColor="@color/c_gray_text"
+            android:textSize="@dimen/txt_size_sp14" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+
+            android:id="@+id/tv_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/distance"
+            android:textAllCaps="false"
+            android:textColor="@color/c_gray_text"
+            android:textSize="@dimen/txt_size_sp14" />
+
+    </LinearLayout>
+
+</RelativeLayout>

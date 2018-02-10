@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d_pad_tv_address"
+        android:text="jpjpjjp"
+        android:textColor="@color/c_tv_profile_txt"
+        android:textSize="@dimen/s_tv_address" />
+</LinearLayout>

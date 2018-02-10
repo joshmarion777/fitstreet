@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.MyProfileActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/d_mar_ll_profile"
+        android:layout_marginLeft="@dimen/d_mar_ll_profile"
+        android:layout_marginRight="@dimen/d_mar_ll_profile"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d_mar_ll_profile"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/d_pad_tv_edit_save_profile"
+                    android:paddingLeft="@dimen/d_pad_tv_edit_save_profile"
+                    android:text="@string/txt_edit"
+                    android:textColor="@color/c_txt_edit_save_profile"
+                    android:textSize="@dimen/s_tv_edit_save_profile" />
+
+                <ImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="@dimen/d_size_profile_pic_profile"
+                    android:layout_height="@dimen/d_size_profile_pic_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d_mar_iv_profile" />
+
+            </RelativeLayout>
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                style="@style/textview_profile_title"
+                android:text="@string/txt_name" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_name"
+                style="@style/textview_profile_text" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                style="@style/textview_profile_title"
+                android:text="@string/txt_gender" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_gender"
+                style="@style/textview_profile_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d_mar_t_profile_label"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        style="@style/textview_profile_title"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/txt_mobile_no" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_mobile_no"
+                        style="@style/textview_profile_text" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/d_width_div_profile"
+                    android:layout_height="match_parent"
+                    android:background="@color/c_div_profile" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        style="@style/textview_profile_title"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/txt_dob" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_dob"
+                        style="@style/textview_profile_text" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                style="@style/textview_profile_title"
+                android:text="@string/txt_email_id" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_email_id"
+                style="@style/textview_profile_text" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                style="@style/textview_profile_title"
+                android:text="@string/txt_location" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_location"
+                style="@style/textview_profile_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/d_mar_ll_profile"
+                android:layout_marginTop="@dimen/d_mar_t_profile_label"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        style="@style/textview_profile_title"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/txt_height" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_height"
+                        style="@style/textview_profile_text" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/d_width_div_profile"
+                    android:layout_height="match_parent"
+                    android:background="@color/c_div_profile" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        style="@style/textview_profile_title"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/txt_weight" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_weight"
+                        style="@style/textview_profile_text" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/d_pad_ll_row_distance">
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_distance_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/txt_miles"
+        android:textColor="@color/c_text_spinner_item_distance"
+        android:textSize="@dimen/s_title_settings" />
+
+    <RadioButton
+        android:id="@+id/rb_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_mar_row_distance"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>

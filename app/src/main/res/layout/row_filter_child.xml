@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/x_sd_partner_filters"
+        android:padding="@dimen/d_pad_tv_partners"
+        android:textColor="@color/c_txt_filter_popup"
+        android:textSize="@dimen/s_tv_filter_partners"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_price_range"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:padding="@dimen/d_pad_ll_price_range">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_rb_price"
+            android:layout_margin="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_price_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/d_mar_small_5dp"
+            android:textColor="@color/c_txt_filter_popup"
+            android:textSize="@dimen/s_tv_filter_partners" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gender"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/d_pad_tv_partners"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_male_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/x_sd_gender_male_filter" />
+
+        <ImageView
+            android:id="@+id/iv_female_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/x_sd_gender_female_filter" />
+
+    </LinearLayout>
+
+</RelativeLayout>

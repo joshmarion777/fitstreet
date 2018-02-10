@@ -1,0 +1,577 @@
+<resources>
+    <string name="app_name">FitStreet</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_signup">Sign Up</string>
+    <string name="hint_email_id">Email Id</string>
+    <string name="hint_password">Password</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="txt_fit_street">FitStreet</string>
+    <string name="txt_title_tutorial_first">Welcome to FitStreet</string>
+    <string name="txt_title_tutorial_second">Fs reward points</string>
+    <string name="txt_title_tutorial_third">Uniquely designed challenges</string>
+    <string name="txt_title_tutorial_fourth">Fs store</string>
+    <string name="txt_tutorial_first">make your workout programs more rewarding! make money for every calorie burnt by using fitstreet
+    reward points and cashback scheme.</string>
+    <string name="txt_tutorial_second">by connecting with fitness tracking apps and wearables, fitstreet will analyse your workout data and convert
+    your effort into fs reward points. </string>
+    <string name="txt_tutorial_third"> compete with friends in a uniquely designed challenges to win inr, 10,000 every month! win exclusive
+    discount on fitstreet merchandise.</string>
+
+    <string name="err_email_empty">Please enter email address.</string>
+    <string name="err_password_empty">Please enter password.</string>
+
+    <string name="err_network_connection">Please check your internet connection.</string>
+    <string name="txt_blank"> </string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_cancel">CANCEL</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_male">Male</string>
+    <string name="btn_create_account">CREATE ACCOUNT</string>
+    <string name="txt_hint_password">Password</string>
+    <string name="txt_hint_email_id">Email Id</string>
+    <string name="txt_hint_dob">DOB</string>
+    <string name="txt_hint_mobile_no">Mobile No.</string>
+    <string name="txt_hint_name">Name</string>
+    <string name="txt_starting_text">LET\'S START EXPLORING</string>
+    <string name="rb_text_receive_updates">Yes, I\'d like to receive email updates</string>
+    <string name="txt_middel_view_text">OR</string>
+    <string name="txt_login_with_fb">Login with Facebook</string>
+    <string name="txt_login_mail">Login with Email</string>
+    <string name="txt_skip">SKIP</string>
+    <string name="err_email_invalid">Please enter valid email address</string>
+    <string name="app_id">794233090711736</string>
+    <string name="dialog_please_wait">Please wait&#8230;</string>
+    <string name="err_name_empty">Please enter name</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="txt_drawer_help_support">Help &amp; Support</string>
+    <string name="txt_drawer_invite_earn">Invite &amp; Earn</string>
+    <string name="txt_drawer_favourites">Favourites</string>
+    <string name="txt_drawer_settings">Settings</string>
+    <string name="txt_drawer_my_account">My Account</string>
+    <string name="txt_drawer_my_cart">My Cart</string>
+    <string name="txt_drawer_redeem_points">Redeem FS Points</string>
+    <string name="txt_drawer_connect_app_devices"><![CDATA[Connect Apps & Devices]]></string>
+    <string name="txt_drawer_home">Home</string>
+    <string name="err_mobile_empty">Please enter mobile no.</string>
+    <string name="err_password_length">Password must be %1$d-%2$d characters long</string>
+    <string name="err_old_password_length">Old password must be %1$d-%2$d characters long</string>
+    <string name="err_new_password_length">New password must be %1$d-%2$d characters long</string>
+    <string name="err_gender_empty">Please select gender</string>
+    <string name="txt_terms_of_use">Terms of Use </string>
+    <string name="txt_privacy_policy">Privacy Policy</string>
+    <string name="txt_terms_privacy_policy">By signing up you accept our Terms of Use and Privacy Policy</string>
+    <string name="txt_forgot_pwd_title">Forgot Your Password?</string>
+    <string name="hint_forgot_pwd">Enter your email id</string>
+    <string name="txt_send">SEND</string>
+    <string name="txt_forgot_pwd_msg">Please enter your email id below and we\'ll send you a link to reset your password</string>
+    <string name="txt_general">General</string>
+    <string name="txt_distance">Distance</string>
+    <string name="txt_change_password">Change Password</string>
+    <string name="txt_information">Information</string>
+    <string name="txt_about_us">About Us</string>
+    <string name="txt_notifications">Notifications</string>
+    <string name="hint_old_pwd">Enter old password</string>
+    <string name="hint_new_pwd">Enter new password</string>
+    <string name="txt_miles">miles</string>
+    <string name="txt_settings">Settings</string>
+    <string name="txt_done">Done</string>
+    <string name="txt_edit">Edit</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_mobile_no">Mobile Number</string>
+    <string name="txt_dob">Date of Birth</string>
+    <string name="txt_email_id">Email Id</string>
+    <string name="txt_location">Location</string>
+    <string name="txt_height">Height (Feet/Inches)</string>
+    <string name="txt_weight">Weight (Kg)</string>
+    <string name="txt_my_profile">My Profile</string>
+    <string name="err_mobile_invalid">Mobile no. should be 10 digits long</string>
+    <string name="alert_login">Please login to access this section.</string>
+    <string name="txt_toolbar_home">HOME</string>
+    <string name="txt_bottom_left_circle">CALORIES BURNED</string>
+    <string name="txt_bottom_middle_circle">FITSTREET POINTS</string>
+    <string name="txt_bottom_right_circle">MILES</string>
+    <string name="txt_inner_middle_circle">0</string>
+    <string name="txt_inner_right_circle">0</string>
+    <string name="txt_inner_left_circle">0</string>
+    <string name="txt_my_account">My Account</string>
+    <string name="txt_my_orders">My Orders</string>
+    <string name="txt_my_addresses">My Addresses</string>
+    <string name="txt_logout">Logout</string>
+    <string name="alert_verify_email">Please verify your email</string>
+    <string name="err_date_invalid">Future date cannot be selected</string>
+    <string name="txt_no">No</string>
+    <string name="txt_yes">Yes</string>
+    <string name="alert_logout">Are you sure you want to logout?</string>
+    <string name="alert_exit">Are you sure you want to exit FitStreet?</string>
+    <string name="txt_no_data">No Data Found</string>
+    <string name="txt_save">Save</string>
+    <string name="err_old_pwd_empty">Please enter old password</string>
+    <string name="err_new_pwd_empty">Please enter new password</string>
+    <string name="hint_search">Search</string>
+    <string name="txt_arc_menu_share_activities">Share Activities</string>
+    <string name="txt_arc_menu_invite_friends">Invite Friends</string>
+    <string name="txt_arc_menu_workout">Workout</string>
+    <string name="txt_title_coupons">Coupons</string>
+    <string name="txt_select_image_from">Select Image From</string>
+    <string name="err_permission_denied">Permission Denied</string>
+    <string name="per_allow_storage">You need to allow access to external storage</string>
+    <string name="per_allow_gservices">You need to allow access to Google services</string>
+    <string name="hint_search_by_name">Search by Product Name</string>
+    <string name="txt_view_all">VIEW ALL</string>
+    <string name="txt_others">Others</string>
+    <string name="txt_tabs_title_recommended">RECOMMENDED</string>
+    <string name="txt_tabs_title_coupons">COUPONS</string>
+    <string name="txt_tabs_title_trending">TRENDING</string>
+    <string name="txt_title_recommended">Recommended</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_pin_code">Pin Code</string>
+    <string name="txt_landmark">Landmark</string>
+    <string name="txt_state">State</string>
+    <string name="txt_city">City</string>
+    <string name="txt_cancel_address">Cancel</string>
+    <string name="txt_save_address">Save</string>
+    <string name="txt_coupons_list_validity">"Valid till "</string>
+    <string name="txt_favourite">Favourite</string>
+    <string name="txt_remove">Remove</string>
+    <string name="txt_add_new_address">ADD NEW ADDRESS</string>
+    <string name="txt_no_addresses">YOU HAVE NOT SAVED\nANY ADDRESS.</string>
+    <string name="txt_login_nav">Login</string>
+    <string name="txt_sign_up_nav">Sign Up</string>
+    <string name="txt_notification_circle">0</string>
+    <string name="txt_btn_products">Products</string>
+    <string name="txt_btn_coupons">Coupons</string>
+    <string name="txt_success_set_favourite_coupon">Selected coupon is added to your favourites</string>
+    <string name="txt_filter">FILTER</string>
+    <string name="txt_partners">Partners</string>
+    <string name="txt_set">Set</string>
+    <string name="txt_cancel_height">Cancel</string>
+    <plurals name="plural_address">
+        <item quantity="one">%1$d Address saved</item>
+        <item quantity="other">%1$d Addresses saved</item>
+    </plurals>
+
+    <string name="txt_success_set_favourite_product">Selected product is set to your favourite</string>
+    <string name="txt_success_set_favourite_count">0</string>
+    <string name="txt_success_unfavourite_coupon">Coupon is deleted from favourites</string>
+    <string name="txt_success_unfavourite_product">Product is deleted from favourites</string>
+    <string name="txt_trending_title">Trending</string>
+    <string name="txt_selling_price">Selling Price</string>
+    <string name="txt_points_to_redeem">Points to Redeem</string>
+    <string name="txt_discount">Cashback you will get</string>
+    <string name="err_address_empty">Please enter address</string>
+    <string name="err_pin_code_empty">Please enter pin code</string>
+    <string name="err_state_empty">Please enter state</string>
+    <string name="err_city_empty">Please select city</string>
+    <string name="txt_reset">Reset</string>
+    <string name="alert_remove_address">Are you sure you want to remove this address?</string>
+    <string name="txt_buy_now">Buy Now</string>
+    <string name="txt_apply">Apply</string>
+    <string name="format_price_range">%1$d - %2$d (INR)</string>
+    <string name="txt_share_using">Share using</string>
+    <string name="txt_select_activity">Select Activity Display</string>
+    <string name="txt_today">Today</string>
+    <string name="txt_week">Week</string>
+    <string name="txt_lifetime">Lifetime</string>
+    <string name="txt_year">Year</string>
+    <string name="txt_month">Month</string>
+    <string name="txt_hint_share">Write something about this</string>
+    <string name="txt_share_on_fb">Post on Facebook</string>
+    <string name="txt_share_activities">Share Activities</string>
+    <string name="err_share_unsuccessful">Image could not be shared</string>
+    <string name="txt_challenges">Challenges</string>
+    <string name="txt_my_challenges">My Challenges</string>
+    <string name="txt_ongoing_challenges">Ongoing And Upcoming</string>
+    <string name="txt_join_challenge">Join</string>
+    <string name="txt_title_challenge_details">Challenge Details</string>
+    <string name="rank">Rank</string>
+    <string name="athlete">Athlete</string>
+    <string name="distance">Distance</string>
+    <string name="join">Join</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="left">Left</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="err_pin_code_invalid">Pin code must be 6 digits long</string>
+    <string name="err_passwords_same">Old password and new password cannot be same</string>
+    <string name="participant">Participants</string>
+    <string name="txt_no_ongoing_challenges">No new challenges.</string>
+    <string name="alert_cannot_change_pwd">You cannot change the password as you are logged in with Facebook.</string>
+    <string name="txt_recent_orders">Recent Orders</string>
+    <string name="txt_completed_orders">Completed Orders</string>
+    <string name="txt_title_my_orders">My Orders</string>
+    <string name="txt_delivered_on">"Delivered On : "</string>
+    <string name="txt_delivered">Delivered On</string>
+    <string name="txt_size">Size : </string>
+    <string name="txt_color">Color : </string>
+    <string name="txt_fs_store">FS Store</string>
+    <string name="txt_shop_men">Shop Men</string>
+    <string name="title_connect_apps_and_devices">Connect Apps And Devices</string>
+
+    <string name="txt_cancel_order">Cancel Order</string>
+    <string name="txt_shop_men_fs_store_title">Shop Men</string>
+    <string name="txt_shop_women_fs_store_title">Shop Women</string>
+    <string name="txt_title_order_details">Order Details</string>
+    <string name="txt_ordered_on">Ordered On</string>
+    <string name="txt_no_of_items">No. of Products</string>
+    <string name="txt_grand_total">Grand Total</string>
+    <string name="order_number">Order Number </string>
+    <string name="order_status">Order Status</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="txt_share_body">Hey guys, I found this cool app called FitStreet which reward you in real cash for being fit and stylish, check it out.\nhttps://play.google.com/store/apps/details?id=com.fitstreet</string>
+    <string name="txt_contest_share">Hey guys join FitStreet (Contest name-for example: August distance challenge or 10k challenge*) and earn Rs 10,000 in real cash, also stand a chance to win exciting prices.</string>
+    <string name="txt_invite_friend_text">Hey guys, I found this cool app called FitStreet which reward you in real cash for being fit and stylish, check it out.\n https://play.google.com/store/apps/details?id=com.fitstreet</string>
+    <string name="title_redeem_fs_points">Redeem FS Points</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="description">Description</string>
+    <string name="txt_description_text_redeem_points">You can redeem this FS Points balance to buy unique and awesome products from FS Store and from other Partners.</string>
+    <string name="how_to_redeem">How to Redeem FS points :</string>
+    <string name="txt_description_how_to_redeem_points">There are multiple ways to redeem your hard earned FS Points.Please check out the options below :</string>
+    <string name="txt_title_fs_store_product_detail">Product Detail</string>
+    <string name="txt_challenge_shared_msg_one">"Hey guys join FitStreet (Contest name - "</string>
+    <string name="txt_challenge_shared_msg_two">"*) and earn Rs 10,000 in real cash, also stand a chance to win exciting prices.\n https://play.google.com/store/apps/details?id=com.fitstreet"</string>
+    <string name="select_size">Select Size</string>
+    <string name="txt_start_redeeming">Start Redeeming</string>
+    <string name="material">Material</string>
+    <string name="fabric">Fabric</string>
+    <string name="fit">Fit</string>
+    <string name="size_chart">Size Chart</string>
+    <string name="product_details">Product Details</string>
+    <string name="description_fs_store_product">Description</string>
+    <string name="txt_return">Return</string>
+    <string name="txt_return_days_value">15 days Return</string>
+    <string name="title_help_and_support"><![CDATA[Help & Support]]></string>
+    <string name="txt_contact_us">Contact Us</string>
+    <string name="txt_faq">FAQ</string>
+      <string name="fitstreet_is_all_about">
+FitStreet recognizes the need for motivation among fitness enthusiasts. It seeks to cater to a niche crowd of people looking for inspiration to burn extra calories by providing an unique opportunity to make money for every calorie burnt.
+Very simply:\n
+* Download the FitStreet app available in Play Store for Android and iOS\n
+* Sign up with email or Facebook\n
+* Connect with fitness tracking applications or wearable fitness devices\n
+* Start earning FitStreet reward points for every calorie you burn\n
+* Redeem FitStreet reward points to earn cashback while shopping for your favorite merchandise or by visiting the FitStreet store and buying exclusive FitStreet merchandise
+       </string>
+        <plurals name="txt_days_left">
+            <item quantity="one">" Day Left"</item>
+            <item quantity="other">" Days Left"</item>
+        </plurals>
+    <string name="txt_phone_number">+91–9831911355</string>
+    <string name="txt_timings">Timings : 10 AM to 6 PM (Mon-Sat)</string>
+    <string name="txt_customer_support">Customer Support : support@fitstreet.com</string>
+    <string name="txt_business_enquiry">Business Inquiry : inquiry@fitstreet.com</string>
+    <string name="txt_address_help_support">Address</string>
+    <string name="txt_address_value">172/A, Bagmari Road, 4th Floor,</string>
+    <string name="txt_address_city">Kolkata - 700065 </string>
+    <string name="follow_us">Follow Us</string>
+    <string name="like_us">Like Us</string>
+    <string name="general">General</string>
+    <string name="cashback">Cashback</string>
+    <string name="shipping_order_tracking_and_delivery">Shipping, order tracking and delivery</string>
+    <string name="cancellation_return_and_funds">Cancellation, return and funds</string>
+    <string name="txt_faq_header">Welcome to our frequently asked questions section designed specially to address your common queries. Feel free to contact us if a particular enquiry is not answered here.</string>
+    <string name="fitstreet_all_about_header">1.   What is FitStreet all about?</string>
+    <string name="fitstreet_money_header">2.   How does FitStreet help me earn money?</string>
+    <string name="fitstreet_money">FitStreet keeps track of your workout details and offers an unique exchange policy where calories burnt and distance covered during a workout can be traded for monetary benefits with the help of FitStreet reward points and cashback schemes along with FitStreet organized fitness based competitions which offer grand cash prizes.</string>
+    <string name="tv_fitstreet_reward_points_header">3.   How many reward points do I get for every calorie I burn?</string>
+    <string name="fitstreet_rewards_points">Users are awarded one FitStreet reward point for every calorie burnt. Calories burnt are retrieved from your connected tracking app. In case we do not get this data from your connected app, we use a rule of 1 kilometer = 75 calories = 75 points.</string>
+    <string name="tv_fitstreet_workout_header">4.   How does FitStreet keep track of my workout details?</string>
+    <string name="fitstreet_workout">On connecting with our partner apps such as MapMyFitness, Strava, RunKeeper and HealthKit (only for iOS) or with wearable fitness devices such as FitBit, iHealth, MI Band and Jawbone Up among others, FitStreet automatically syncs your workout details such as distance covered and calories burned into our system.</string>
+    <string name="fitstreet_online_shopping_header">5.   How does FitStreet help me save money on online shopping?</string>
+    <string name="tv_fitstreet_online_shopping">FitStreet helps users save money on online shopping when they shop from our partner websites such as Amazon, Flipkart and Myntra by offering an exclusive cashback scheme, which can be availed by redeeming FitStreet reward points.</string>
+    <string name="fitstreet_purchase_inform_header">6.   How is FitStreet informed on purchase of an item from partner websites?</string>
+    <string name="tv_fitstreet_purchase_inform">FitStreet receives a notification of purchase from partner websites following which FitStreet starts the process of transferring the cashback value to the wallet of the users.</string>
+    <string name="tv_fitstreet_tracking_header">7.   How do I connect a tracking app?</string>
+    <string name="tv_fitstreet_tracking">The side menu has an option to connect apps and devices. Choose among the list of available apps and wearables to connect with and once you make your selection, you will be redirected to the page of that particular application. On logging in to that particular app, FitStreet will be allowed to access your tracking device.</string>
+    <string name="tv_fitstreet_long_sync_header">8.   How long does it take for connected apps to sync data with the FitStreet app?</string>
+    <string name="tv_fitstreet_long_sync">It generally takes 24 hours, but if your data synchronizing is taking longer then usual then please contact us at support@fitstreet.com</string>
+    <string name="tv_fitstreet_redemption_header">9.   How does FitStreet point redemption work?</string>
+    <string name="tv_fitstreet_redemption"><b>Option 1:</b>\n\n
+        1. Visit the FitStreet store accessed only through the FitStreet app\n
+        2. Select the exclusive FitStreet products you want to buy as you check out discount and cashback details\n
+        3. A popup page will appear asking for your confirmation to redeem FitStreet points to get cashback where you can confirm redeeming of points\n
+        4. Cashback will be credited instantly into your account on completion of transaction\n
+        \n<b>Option 2:</b> \n\n
+        1. Under main menu visit “Redeem FS Points” \n
+        2. Select awesome products available for sale through our partner websites\n
+        3. A popup page will appear asking for your confirmation to redeem FitStreet points to get cashback where you can confirm redeeming of points \n
+        4. On being redirected to our partner website product page, complete your purchase as you would do normally if directly visiting the website\n
+        5. FitStreet will be notified about your purchase within 72 hrs and we will credit you cashback amount after the transferring process is complete\n
+        \n<b>Option 3:</b> \n\n
+        1. The ccoupon section on the homepage has coupons listed under various categories from where you can select the coupon and offers you are interested in after reading the discount and cashback details carefully\n
+        2. On selecting the option to start shopping, popup page will appear asking for your confirmation to redeem FitStreet points to get cashback where you can confirm redeeming of points\n
+        3. On being redirected to our partner website product page, complete your purchase as you would do normally if directly visiting the website \n
+        4. FitStreet will be notified about your purchase within 72 hrs and we will credit you cashback amount after the transferring process is complete</string>
+    <string name="tv_fitstreet_earnings_header">10.  Where do I see my earnings?</string>
+    <string name="tv_fitstreet_earnings">After you are logged in, you can see all your earnings (Including earning from challenges) under wallet section.</string>
+    <string name="tv_fitstreet_exclusive_header">11.   What exclusive merchandise does FitStreet offer?</string>
+    <string name="tv_fitstreet_exclusive">FitStreet offers its own merchandise including trendy active-wear and sports-wear; tailor made with exclusive designs such as waterproof and washable headphones fitted into customized sports and workout jackets, available for purchase only through the FitStreet app.</string>
+    <string name="tv_fitstreet_customer_support_header">12.   How do I contact your customer support team?</string>
+    <string name="tv_fitstreet_customer_support"><![CDATA[You can reach to us at 9831911955. Alternatively, you can also get in touch by e-mailing us at support@fitstreet.com. Our customer support team is available Monday - Friday from 10 am - 7 pm IST. We guarantee a 48-hour response time, but we hope to respond to your request sooner than that.]]></string>
+    <string name="tv_fitstreet_redeem_reward_header">1.   Where can I redeem my reward points for cashback purposes?</string>
+    <string name="tv_fitstreet_redeem_reward">FitStreet reward points of a certain valuation can be redeemed for cashback purposes on products offered by our affiliate partners like Flipkart, Amazon and Myntra as well as on our own merchandise, which is available under the FitStreet store.</string>
+    <string name="tv_fitstreet_transaction_header">2.   From the time I do a transaction, how long does it take to actually get my cashback?</string>
+    <string name="tv_fitstreet_transaction">There are 2 cases where you are eligible to get cashback from our app:\n
+        First, when you buy merchandise from the FitStreet store. In this case the cashback amount in instantly credited into your wallet, however on cancellation of the order within the cancellation period, your cashback is removed from your wallet for that particular transaction. \n
+        Second, when you buy merchandise from our partner’s store. In this case the time may vary between retailers and the type of purchase. Normally within 4-72 hours of a transaction, we send you an email stating the cashback due to you. This is called \'pending\' cashback. Once the return period of your product/s is over, the retailer knows that the sale was genuine, and then pays us in the next monthly payment cycle. The status of this transaction shall then automatically move to \'confirmed\'. From the time of your purchase it could take between 1-4 months for your cashback to get confirmed.</string>
+    <string name="tv_fitstreet_cashback_pending_header">3.   What does it mean when the cashback is in pending state?</string>
+    <string name="tv_fitstreet_cashback_pending"><![CDATA[When valid transactions have been acknowledged by retailers but are still within the return/exchange/cancellation period, your cashback is in pending state.  For example, if you make a purchase through FitStreet for Rs. 500, within 1-3 days you shall receive an email from us acknowledging that you have a cashback value of INR 55 (at 11% cashback rate) in pending state. However if you return/cancel/exchange your order, the transaction is cancelled and the cashback is removed from your pending earnings.]]></string>
+    <string name="tv_fitstreet_cashback_confirmed_header">4.   What does it mean when the cashback is in confirmed state?</string>
+    <string name="tv_fitstreet_cashback_confirmed">Confirmed earnings are those that have been approved as valid sales from retailers. On collecting a minimum of Rs. 250 as confirmed cashback, we can transfer the money for free to your Indian bank account by NEFT or you can use that money to purchase our own merchandise available under the FitStreet store.</string>
+    <string name="tv_fitstreet_cashback_transaction_header">5.   How can I assure smooth cashback transaction?</string>
+    <string name="tv_fitstreet_cashback_transaction">To enable your cashback to track successfully, we recommend that in your browser settings you permanently allow cookies, JavaScript and third party images. Clear cookies to get started. Always visit retailer links only through FitStreet and not by typing retailer website names on your browser screens. Avoid using quote references or codes provided by a comparison site as FitStreet will not receive any commission from retailers and will be unable to give cashback to you. Keep all email confirmations and documents from the retailer - just in case you need to use the information for submitting an earnings enquiry.\n
+        You can always keep track of your earnings (including rewards from challenges) under the wallet section.</string>
+    <string name="tv_fitstreet_receive_cashback_header">6.   What do I do if I do not receive a cashback confirmation for a purchase?</string>
+    <string name="tv_fitstreet_receive_cashback"><![CDATA[If your purchase was less than 3 days ago,
+    please wait a little longer. It usually takes between 4-72 hours for retailers to track sales.\n However, if your purchase was over 3 days ago, please submit a missing cashback ticket within 10 days from the date of transaction. Any missing cashback claims will not be accepted after 10 days. Sometimes, though rare, retailers fail to track a transaction on their end. After we receive transaction details from you, we can follow this up with the retailer to get your missing cashback.\n
+      In order to submit a ticket, you need details such as retailer name, date and time of the transaction, transaction amount, order or transaction reference and any other information to help track your transaction.]]></string>
+    <string name="tv_fitstreet_withdraw_header">7.   When can I withdraw my cashback value?</string>
+    <string name="tv_fitstreet_withdraw">Cashback value can be withdrawn after pending status is converted to confirmed status in around 60 days. Money in pending form still needs to be completely processed before it can be withdrawn. Users may also choose to not withdraw the cashback and instead use it to buy exclusive FitStreet merchandise available on the app.</string>
+    <string name="tv_fitstreet_minimum_value_money_header">8.   What is the minimum value of money I can withdraw?</string>
+    <string name="tv_fitstreet_minimum_value_money">The money in confirmed state can be withdrawn in cash on reaching a minimum value of INR 250.</string>
+    <string name="tv_fitstreet_request_withdrawal_header">9.   How do I request for payment or bank withdrawal for cashback? Are there any restriction or charges?</string>
+    <string name="tv_fitstreet_request_withdrawal"><![CDATA[Cashback can be paid to you as per the below terms:\n
+     Only confirmed cashback can be paid. Pending cashback cannot be paid till its status has been updated as ‘confirmed’ by the retailers.\n
+      When you have earned a minimum of Rs.250 as confirmed cashback, we can pay the money to your Indian bank account via NEFT (for free). \n
+      Depending on your bank, this payment should reach your account within 6-8 business days for payments via NEFT.\n
+       When you have earned a minimum of Rs.250 as Confirmed cashback, we can pay the money to your Indian bank account via NEFT (for free).\n
+         To request payment, login to your FitStreet account. Under ‘Wallet’ click on ‘request withdrawal’. Here you can fill in your Indian bank account details that you want us to pay the cashback to.\n
+          Money earned though FitStreet organized contests can be withdrawn at any time regardless of the amount. Options to withdraw money are found under the ‘Wallet’ section.]]></string>
+    <string name="tv_fitstreet_receive_neft">Payments are made every week on Monday. All payment requests made by Friday 2 p.m. IST would be paid on the following Monday. Depending on your bank, this payment should reach your account within 6-8 business days.</string>
+    <string name="tv_fitstreet_receive_neft_header">10.   How long does it take to receive money via NEFT?</string>
+    <string name="tv_fitstreet_cash_in_wallet_header">11.   Does cash in my wallet expire?</string>
+    <string name="tv_fitstreet_cash_in_wallet">Absolutely not, this is your hard earned money and you may choose to use it according to your convenience.</string>
+    <string name="tv_fitstreet_organized_contests_header">1.   What are FitStreet organized contests?</string>
+    <string name="tv_fitstreet_organized_contests">FitStreet aims to motivate users through free contests offering mind-blowing cash prizes. Contests range from events including running and cycling competitions through which data such as distance covered and calories burned are mapped and regulated to determine the winner who receives cash prizes up to INR 10,000.</string>
+    <string name="tv_fitstreet_participate_contests_header">2.   Is there any cost for participating in contests and challenges?</string>
+    <string name="tv_fitstreet_participate_contests">Users can participate in challenges free of cost, and are rewarded with cash prizes and other incentives offered by FitStreet, such as sales on premier FitStreet apparel and merchandise.</string>
+    <string name="tv_fitstreet_contests_prize_money_header">3.   How will I get my prize money?</string>
+    <string name="tv_fitstreet_contests_prize_money">Users must submit valid proof of their workout details in the form of images provided by the fitness based apps, which indicate duration, distance and other GPS tracked workout details such as timing, average pace and splits of the workout. Manually logged workout data are not accepted as proof for contests. Prize money is credited to the wallet of the user.</string>
+    <string name="tv_fitstreet_shipping_policy_header">1.   What is FitStreet Shipping policy?</string>
+    <string name="tv_fitstreet_shipping_policy">We strive to deliver products purchase from us in excellent condition and therefore we partnered with best delivery companies to ensure our customers timely delivery and hassle free online shopping.</string>
+    <string name="tv_fitstreet_track_order_header">3.   How do I track my order?</string>
+    <string name="tv_fitstreet_track_order">Select the ‘My Order’ option to track your orders under the main menu of the App.</string>
+    <string name="tv_fitstreet_shipping_charges_header">4.   Delivery is free or is there any shipping charges involved?</string>
+    <string name="tv_fitstreet_shipping_charges">Delivery is free on order above Rs 500, however shipping charges of Rs 100 will be levied on order below Rs 500.</string>
+    <string name="tv_fitstreet_return_policy_header">1.   What is the FitStreet return Policy?</string>
+    <string name="tv_fitstreet_return_policy">Returns are accepted upto 15 days after product delivery. Products should be in unused conditions with all original tags and packaging intact.\n
+        To schedule a return, email us at support@fitstreet.com mentioning your order number and cause of return/exchange. Customers will have to self-ship the product, as a reverse pickup facility is currently unavailable. Customers will be paid upto INR 100 for the return mail, which will be credited to the customer’s wallet.</string>
+    <string name="tv_fitstreet_return_my_product_header"><![CDATA[2.   Where should I return my Product ?]]></string>
+    <string name="tv_fitstreet_return_my_product">For self-shipping your returns, customers are requested to pack the items securely to prevent any loss or damage during transit through a reliable local courier service to the address mentioned below:\n
+        - 172/a, Bagmari Road, 4th floor, Kolkata - 700054, Landmark- Opposite ESI Hospital.</string>
+    <string name="tv_fitstreet_cancel_order_header">3.   How do I cancel my order?</string>
+    <string name="tv_fitstreet_cancel_order">Customers can go to the ‘My Orders’ option under the main menu and choose to cancel the partial or full order within 24 hours of the order being placed and before it gets shipped. The refund amount will be added to the customer’s wallet. If the order has already been shipped, we will be unable to cancel it. However, you can politely refuse to accept the shipment and let us know about it. If you have accepted the shipment, you can return the product through our return policy.</string>
+    <string name="tv_fitstreet_terms_and_conditions_header">4.   What are the terms and conditions for refund?</string>
+    <string name="tv_fitstreet_terms_and_conditions">Once the refunded item is received at our warehouse, it undergoes a quality check. Typically the refund process is initiated within 2 days of this quality check. Expected refund resolution timeline is 7 days post quality check.\n
+        All refunds will be credited in your FitStreet wallet as store credits, which you can use to buy FitStreet merchandise under the FitStreet store or request for withdrawal.\n
+        If you are a guest user, you will need to register with the email address used to place your order in order to access the wallet.</string>
+    <string name="tv_fitstreet_exchanges_allowed_header">5.   Are exchanges allowed?</string>
+    <string name="tv_fitstreet_exchanges_allowed">Yes. For exchange of products, kindly follow the return procedure for the product you want to exchange then use the store credit we give you to place the order for the new product.</string>
+    <string name="tv_fitstreet_payment_policy_header">1.   What is the FitStreet payment policy?</string>
+    <string name="tv_fitstreet_payment_policy">For products brought from our affiliate partner websites such as Amazon, Myntra and Flipkart, all payments should be done at the affiliate partner websites.\n
+        FitStreet does not accept payments for affiliate partners. FitStreet only accepts payments for products purchased from the FitStreet store.</string>
+    <string name="tv_fitstreet_payment_methods_header">2.   What payment methods do you guys accept?</string>
+    <string name="tv_fitstreet_payment_methods">We accept Master/Visa credit cards and all major debit cards. Options of net banking, cash on delivery and payment through FitStreet wallet are also provided to customers.</string>
+    <string name="tv_fitstreet_payment_fails_header">3.   What should I do if my payment fails?</string>
+    <string name="tv_fitstreet_payment_fails">In case of a payment failure, please retry making the payment after ensuring that the information passed on to payment gateway is accurate i.e. account details, billing address, password (for net banking) and that your internet connection is not disrupted in the process.\n
+        If your account has been debited after a payment failure, it is normally rolled back to your bank account within 7 business days. For any further clarification, you can email us at support@fitstreet.com</string>
+    <string name="tv_fitstreet_time_period_header">2.   What is the delivery time period?</string>
+    <string name="tv_fitstreet_time_period">Once the Customer has successfully placed an order for a product, the same shall be delivered within 3 (Three) to 7 (Seven) days, however this may be slightly vary depending on the shipping address of the Customer.</string>
+    <string name="payment">Payment</string>
+    <string name="txt_my_cart">My Cart</string>
+    <string name="txt_start_add_from_favorites">Add from favourites</string>
+    <string name="txt_start_shopping">start shopping</string>
+    <string name="remove">Remove</string>
+    <string name="an_empty_cart">An empty cart</string>
+    <string name="cart_total">Cart Total</string>
+    <string name="discount">Discount</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="delivery">Delivery</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="place_order">Place order</string>
+    <string name="cart_remove_successfully">Product is removed from cart successfully</string>
+    <string name="move_to_favourites">move to favourites</string>
+    <string name="select_a_delivery_address">Select a Delivery Address</string>
+    <string name="last_saved_address">Last Saved Address</string>
+    <string name="select_or_add_another_address">Select or add another address</string>
+    <string name="wallet_details">Wallet details</string>
+    <string name="pay_buy_wallet">Pay by wallet balance</string>
+    <string name="order_summary">Order summary</string>
+    <string name="number_of_products">Number of products</string>
+    <string name="total_payable_amount">Total payable amount</string>
+    <string name="paid_from_wallet_balance">Paid from wallet balance</string>
+    <string name="amount_to_be_paid">Amount to be paid</string>
+    <string name="total_wallet_balance">Total wallet balance</string>
+    <string name="txt_checkout">Checkout</string>
+    <string name="txt_select_addresses">Select Address</string>
+    <string name="sold_out">Sold out</string>
+    <string name="txt_repeat_order">Repeat Order</string>
+    <string name="tap_to_select_the_product_you_want_to_cancel">Tap to select the product you want to cancel</string>
+    <string name="track_order">Track Order</string>
+    <string name="select_all">Select All</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="paymeny_by">Payment By</string>
+    <string name="txt_not_delivered">Not yet Delivered</string>
+    <string name="select_products_first">Select Product First</string>
+    <string name="txt_number_of_product">"Number of Products : "</string>
+    <string name="txt_ordered_on_">"Ordered On : "</string>
+    <string name="order_cancellation">Order Cancellation</string>
+    <string name="txt_cancel_order_msg">You are going to cancel a product from your order.Please confirm.</string>
+    <string name="order_cancelled">Order Cancelled</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="size">Size</string>
+    <string name="thanks_for_purchasing">Thanks for purchasing!</string>
+    <string name="txt_okay">Okay</string>
+    <string name="txt_place_order_msg">Your order has been placed successfully and you will get it very soon.</string>
+    <string name="txt_sold_out">One of the cart\'s product is sold out. Please Remove it first.</string>
+    <string name="txt_cashback_description">Use your Fitstreet Wallet Balance to buy awesome stuff from FS Store. You can also
+    transfer this money into your bank acocunt.</string>
+    <string name="txt_total_wallet_text">Total wallet balance</string>
+    <string name="txt_my_wallet">My Wallet</string>
+    <string name="prize_money">Prize Money</string>
+    <string name="txt_wallet_history">My Wallet History</string>
+    <string name="rs">"Rs. "</string>
+    <string name="refund_history">Refund History</string>
+    <string name="order_cancelled_by">Order Cancelled by</string>
+    <string name="refunded_money">Refunded Money</string>
+    <string name="pls_select_address">Please select or add address</string>
+    <string name="txt_cancelled_on">"Cancelled on : "</string>
+    <string name="txt_order_num_">"ORDER NUMBER : "</string>
+    <string name="sleeve">Sleeve</string>
+    <string name="color">Color</string>
+    <string name="care">Care</string>
+    <string name="suitable_for">Suitable For</string>
+    <string name="check_pincode">Check Pincode</string>
+    <string name="txt_delivery">Delivery</string>
+    <string name="enter_your_pincode">Enter your pincode</string>
+    <string name="check">Check</string>
+    <string name="add_more_from_favourites">add more from favourites</string>
+    <string name="price_details">Price Details</string>
+    <string name="txt_cash_on_delivery">Cash on delivery</string>
+    <string name="txt_pay_by_other">Pay by other options</string>
+    <string name="txt_send_to_bank">Send To Bank</string>
+    <string name="account_holder_s_name">Account Holder\'s Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_num">Account Number</string>
+    <string name="enter_account_holder_s_name">Enter account holder\'s name</string>
+    <string name="enter_your_account_number">Enter your account number</string>
+    <string name="enter_your_bank_name">Enter your bank name</string>
+    <string name="ifsc_code">Enter your bank\'s IFSC code</string>
+    <string name="txt_ifsc_code">IFSC Code</string>
+    <string name="txt_amount_inr">Amount in INR (100-5000)</string>
+    <string name="enter_amount">Enter the amount</string>
+    <string name="err_account_holder_name">Acocunt holder name cannot be blank</string>
+    <string name="err_account_number">Account number cannot be blank</string>
+    <string name="err_bank_name">Bank name cannot be blank</string>
+    <string name="err_amount_send">Amount cannot be blank</string>
+    <string name="err_ifsc_code">Bank IFSC code cannot be blank</string>
+    <string name="err_amount_value">Amount should be in between 100 - 5000</string>
+    <string name="send_to_bank_info">Details sent to bank to successfully</string>
+    <string name="err_amount_value_greater_than_wallet">Amount cannot be greater than your wallet balance</string>
+    <string name="history">History</string>
+    <string name="txt_completed">Completed</string>
+    <string name="txt_pending">Pending</string>
+    <string name="txt_cashback_history">Cashback History</string>
+    <string name="redeemed_fs_points">Redeemed FS Points</string>
+    <string name="expected_date">Expected Date</string>
+    <string name="cashback_you_got">Cashback You Got</string>
+    <string name="txt_check_min_balnace_in_wallet">You should have Min Rs. 100 in your wallet</string>
+    <string name="txt_received">Received</string>
+    <string name="txt_paid">PAid</string>
+    <string name="withdrawer_name">Withdrawer Name</string>
+    <string name="amount">Amount</string>
+    <string name="cashback_used">Cashback Used</string>
+    <string name="total_refund">Total Refund</string>
+    <string name="total_cashback">total cashback</string>
+    <string name="no_cancellation">no cancellation till now</string>
+    <string name="txt_total_refund">"Total Refund : "</string>
+    <string name="no_prize_money">got no prize money</string>
+    <string name="txt_prize_money">Prize Money Details</string>
+    <string name="txt_total_cashback">"Total Cashback : "</string>
+    <string name="you_got_no_cashback">you got no cashback yet \n redeem fs points to get cashback</string>
+    <string name="txt_redeem_history">Redeem History</string>
+    <string name="txt_product_share_message">Hey guys, I found this cool app called FitStreet which reward you in real cash for being fit and stylish, check it out.\nhttps://play.google.com/store/apps/details?id=com.fitstreet</string>
+    <string name="txt_skip_user_id">skipUserID</string>
+    <string name="txt_visit_fs_store">1. Visit Fs Store in our app by tapping @ icon below the screen.</string>
+    <string name="runkeeper_data_success">Calories and Distances are updated from Runkeeper successfully</string>
+    <string name="tap_on_runkeeper_to_connect">Tap on Runkeeper to connect</string>
+    <string name="tap_on_fitbit_to_connect">Tap on Fitbit to connect</string>
+    <string name="txt_refund_policy">Refund Policy</string>
+    <string name="clear_all">Clear All</string>
+    <string name="no_new_notification">No new notification</string>
+    <string name="txt_fitstreet">FitStreet</string>
+    <string name="fitbit_data_success">Calories and Distances are updated from Fitbit successfully</string>
+    <string name="redeem_fs_points_amp_get_cashback"><![CDATA[Redeem FS Points & Get Cashback]]></string>
+    <string name="txt_tutorial_fourth">don\'t forget to checkout our stylish and technologically advanced clothing to keep you going.</string>
+    <string name="txt_fs_store_share">Hey guys, I found this cool app called FitStreet which reward you in real cash for being fit and stylish, check it out.\nhttps://play.google.com/store/apps/details?id=com.fitstreet</string>
+    <string name="product_sold_out">Product sold out</string>
+    <string name="txt_delivery_not_available">Delivery Not Available</string>
+    <string name="refund">Refund</string>
+    <string name="txt_invalid_url">Invalid url.Please try later</string>
+    <string name="txt_connected">Connected</string>>
+    <string name="txt_disconnected">Disconnected</string>
+    <string name="txt_err_app_not_installed">Application is not installed on device.Please install application.</string>
+    <string name="txt_err_app_not_connected">Please connect with Fitbit or Runkeeper</string>
+    <string name="txt_discount_affiliate">Discount</string>
+    <string name="txt_not_received_amount">you haven\'t not received any amount</string>
+    <string name="txt_not_paid_amount">no purchases or withdrawal till now</string>
+    <string name="txt_no_pending_cashback">you have no pending cashback \n redeem fs points to get cashback</string>
+    <string name="txt_no_redeem_history">You haven\'t redeemed \n any point yet</string>
+    <string name="txt_runkeeper_pacakge_name">com.fitnesskeeper.runkeeper.pro</string>
+    <string name="txt_fitbit_package_name">com.fitbit.FitbitMobile</string>
+    <string name="txt_wait_for_payemnt">Please wait while payment process initiates.</string>
+    <string name="txt_not_having_sufficient_fs_points">You do not have sufficient Fitstreet Points to get cashback with this product.</string>
+    <string name="txt_want_redeem_fs_points">Do You Want To Redeem FS Points?</string>
+    <string name="txt_payment_online">Online</string>
+    <string name="txt_payment_by_cod">Cash on delivery</string>
+    <string name="txt_payment_by_wallet">Wallet</string>
+    <string name="txt_last_day">Last Day</string>
+    <string name="txt_ended">Ended</string>
+    <string name="txt_contest_ended">Contest is Already Ended</string>
+    <string name="txt_alert_title">Alert</string>
+    <string name="txt_participants">Participants</string>
+    <string name="txt_rank">Rank</string>
+    >
+
+
+    <string-array name="arr_distance">
+        <item>miles</item>
+        <item>km</item>
+    </string-array>
+    <string-array name="arr_feet">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="arr_inches">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="arr_filter_product">
+        <item>Gender</item>
+        <item>Brands</item>
+        <item>Partners</item>
+        <item>Price Range</item>
+    </string-array>
+    <string-array name="arr_filter_fs_product">
+        <item>Categories</item>
+        <item>Price Range</item>
+    </string-array>
+
+</resources>

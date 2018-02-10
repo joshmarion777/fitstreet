@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_toolbar" />
+
+            <FrameLayout
+                android:id="@+id/container_body"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_view_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_bottom_layout_height"
+                android:background="@color/c_bottom_tab"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/iv_home_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.1"
+                    android:scaleType="center"
+                    android:src="@drawable/x_sd_bottom_tab_home" />
+
+                <ImageView
+                    android:id="@+id/iv_fs_store_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.1"
+                    android:scaleType="center"
+                    android:src="@drawable/x_sd_bottom_tab_fs_store" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d_bottom_view_height"
+                    android:layout_weight=".6" />
+
+                <ImageView
+                    android:id="@+id/iv_trophy_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.1"
+                    android:scaleType="center"
+                    android:src="@drawable/x_sd_bottom_tab_trophy" />
+
+                <ImageView
+                    android:id="@+id/iv_wallet_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.1"
+                    android:scaleType="center"
+                    android:src="@drawable/x_sd_bottom_tab_wallet" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_parent_layout_arc_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/d_mar_large_15dp"
+                android:src="@drawable/center_menu" />
+
+            <FrameLayout
+                android:id="@+id/menu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <affle.com.fitstreet.customviews.arclayout.ArcLayout
+                    android:id="@+id/arc_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:arc_axisRadius="@dimen/d_arc_layout_axis_radius"
+                    app:arc_freeAngle="true"
+                    app:arc_origin="bottom"
+                    app:arc_radius="@dimen/s_ar_menu_radius">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_workout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/workout"
+                        android:gravity="center"
+                        android:text="@string/txt_arc_menu_workout"
+                        android:textColor="@color/c_white"
+                        android:textStyle="bold"
+                        app:arc_angle="45"
+                        app:arc_origin="bottom" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_share_activities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/share_circle"
+                        android:gravity="center"
+                        android:text="@string/txt_arc_menu_share_activities"
+                        android:textColor="@color/c_white"
+                        android:textStyle="bold"
+                        app:arc_angle="90"
+                        app:arc_origin="bottom" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_invite_friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/invite"
+                        android:gravity="center"
+                        android:text="@string/txt_arc_menu_invite_friends"
+                        android:textColor="@color/c_white"
+                        android:textStyle="bold"
+                        app:arc_angle="135"
+                        app:arc_origin="bottom" />
+
+                </affle.com.fitstreet.customviews.arclayout.ArcLayout>
+
+                <!--<affle.com.fitstreet.customviews.arclayout.ArcLayout
+                    android:id="@+id/arc_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:arc_axisRadius="@dimen/d_arc_layout_axis_radius"
+                    app:arc_freeAngle="true"
+                    app:arc_origin="bottom"
+                    app:arc_radius="@dimen/s_ar_menu_radius">
+
+                    <LinearLayout
+                        android:id="@+id/ll_workout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:arc_angle="45"
+                        app:arc_origin="bottom">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_workout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:paddingLeft="@dimen/d_pad_arc_menu_item"
+                            android:text="@string/txt_arc_menu_workout"
+                            android:textColor="@color/c_white"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_workout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/workout" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_share_activities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:arc_angle="90"
+                        app:arc_origin="bottom">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_share_activities"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/txt_arc_menu_share_activities"
+                            android:textColor="@color/c_white"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_share_activities"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/workout" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_invite_friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:arc_angle="135"
+                        app:arc_origin="bottom">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_invite_friends"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d_pad_arc_menu_item"
+                            android:gravity="right"
+                            android:text="@string/txt_arc_menu_invite_friends"
+                            android:textColor="@color/c_white"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_invite_friends"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/invite" />
+                    </LinearLayout>
+
+                </affle.com.fitstreet.customviews.arclayout.ArcLayout>-->
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/c_nav_drawer_background"
+        app:headerLayout="@layout/nav_header_home"
+        app:itemTextColor="@color/c_blue_text"
+        app:menu="@menu/activity_home_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

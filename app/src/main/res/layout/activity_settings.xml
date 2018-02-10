@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/d_mar_sv_settings"
+            android:layout_marginTop="@dimen/d_mar_sv_settings"
+            android:orientation="vertical">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                style="@style/textview_settings_title"
+                android:text="@string/txt_general" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    style="@style/textview_settings_text"
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="@dimen/d_mar_settings_text"
+                    android:layout_marginTop="@dimen/d_mar_settings_text"
+                    android:layout_weight="1"
+                    android:text="@string/txt_distance" />
+
+                <Spinner
+                    android:id="@+id/spn_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d_mar_settings_text"
+                    android:layout_marginRight="@dimen/d_mar_lr_settings"
+                    android:layout_marginTop="@dimen/d_mar_settings_text"
+                    android:background="@drawable/drop_down_box"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_change_password"
+                style="@style/textview_settings_text"
+                android:drawableRight="@drawable/x_sd_up_down"
+                android:text="@string/txt_change_password" />
+
+            <LinearLayout
+                android:id="@+id/ll_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_bg_ll_change_pwd"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d_pad_ll_change_pwd"
+                android:paddingRight="@dimen/d_pad_ll_change_pwd"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_mar_til_change_pwd">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d_mar_til_change_pwd"
+                        android:theme="@style/AppTheme.EditText">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                            android:id="@+id/et_old_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_old_pwd"
+                            android:inputType="textPassword"
+                            android:maxLength="@integer/max_length_password"
+                            android:textColorHint="@color/c_hint_change_pwd"
+                            android:textSize="@dimen/s_et_change_pwd"
+                            android:theme="@style/EditText.Theme" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_hide_show_old_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/d_pad_iv_hide_show"
+                        android:paddingLeft="@dimen/d_pad_iv_hide_show"
+                        android:paddingTop="@dimen/d_pad_iv_hide_show"
+                        android:src="@drawable/x_sd_hide_show" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_mar_til_change_pwd">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AppTheme.EditText">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                            android:id="@+id/et_new_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_new_pwd"
+                            android:inputType="textPassword"
+                            android:maxLength="@integer/max_length_password"
+                            android:textColorHint="@color/c_hint_change_pwd"
+                            android:textSize="@dimen/s_et_change_pwd"
+                            android:theme="@style/EditText.Theme" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_hide_show_new_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/d_pad_iv_hide_show"
+                        android:paddingLeft="@dimen/d_pad_iv_hide_show"
+                        android:paddingTop="@dimen/d_pad_iv_hide_show"
+                        android:src="@drawable/x_sd_hide_show" />
+
+                </RelativeLayout>
+
+                <affle.com.fitstreet.customviews.CustomTypefaceButton
+                    android:id="@+id/btn_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/d_mar_done_btn"
+                    android:layout_marginTop="@dimen/d_mar_til_change_pwd"
+                    android:background="@drawable/x_ds_transparent_stroke_blue"
+                    android:paddingLeft="@dimen/d_pad_btn_done"
+                    android:paddingRight="@dimen/d_pad_btn_done"
+                    android:text="@string/txt_done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/c_txt_done"
+                    android:textSize="@dimen/s_txt_done" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_height_settings_div"
+                android:layout_margin="@dimen/d_mar_lr_settings"
+                android:background="@color/c_settings_div" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    style="@style/textview_settings_title"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/txt_notifications" />
+
+                <Switch
+                    android:id="@+id/switch_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d_mar_lr_settings" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_height_settings_div"
+                android:layout_margin="@dimen/d_mar_lr_settings"
+                android:background="@color/c_settings_div" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                style="@style/textview_settings_title"
+                android:layout_marginBottom="@dimen/d_mar_t_settings_title"
+                android:text="@string/txt_information" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_about_us"
+                style="@style/textview_settings_text"
+                android:drawableRight="@drawable/right_arrow"
+                android:text="@string/txt_about_us" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_privacy_policy"
+                style="@style/textview_settings_text"
+                android:drawableRight="@drawable/right_arrow"
+                android:text="@string/txt_privacy_policy" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_terms_of_use"
+                style="@style/textview_settings_text"
+                android:layout_marginBottom="@dimen/d_mar_t_settings_title"
+                android:drawableRight="@drawable/right_arrow"
+                android:text="@string/txt_terms_of_use" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_refund_policy"
+                style="@style/textview_settings_text"
+                android:layout_marginBottom="@dimen/d_mar_t_settings_title"
+                android:drawableRight="@drawable/right_arrow"
+                android:text="@string/txt_refund_policy" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'FitStreet'
+            keyPassword 'fitstreet'
+            storeFile file('/home/akash/FitStreet/fitstreet_signed_apk_path.jks')
+            storePassword 'fitstreet'
+        }
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "com.fitstreet"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.sromku:simple-fb:4.1.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.ogaclejapan.arclayout:library:1.1.0@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.google.android.gms:play-services-location:11.8.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.google.firebase:firebase-core:10.2.1'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'com.android.support:design:26.1.0'
+    compile 'ch.acra:acra:4.6.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.foursquare:foursquare-android-oauth:1.0.3'
+    compile('com.razorpay:checkout:1.1.0')
+    compile 'com.android.support:customtabs:26.1.0'
+    compile('com.android.support:support-v4:26.1.0') {
+        force = true
+    }
+}
+apply plugin: 'com.google.gms.google-services'

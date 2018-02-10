@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rl_btn_buy"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/c_current_balance"
+                android:gravity="center"
+                android:id="@+id/rl_current_balance">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_current_fs_points_balance"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_current_balance"
+                    android:gravity="center" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/current_balance"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_size_balance"
+                    android:layout_below="@id/tv_current_fs_points_balance" />
+            </RelativeLayout>
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textAllCaps="true"
+                android:textSize="@dimen/s_txt_16sp"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/c_dark_grey"
+                android:layout_below="@id/rl_current_balance" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:textColor="@color/c_gray_text"
+                android:textSize="@dimen/txt_size_sp12"
+                android:gravity="start"
+                android:text="@string/txt_description_text_redeem_points" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_redeem"
+                android:textAllCaps="true"
+                android:textSize="@dimen/s_txt_16sp"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/c_dark_grey"
+                android:layout_below="@id/rl_current_balance" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:textColor="@color/c_gray_text"
+                android:textSize="@dimen/txt_size_sp12"
+                android:text="@string/txt_description_how_to_redeem_points" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 1 :- "
+                android:id="@+id/tv_option_one"
+                android:textAllCaps="true"
+                android:textColor="@color/c_dark_grey"
+                android:paddingLeft="@dimen/d_mar_extra_large_30dp"
+                android:paddingRight="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:background="@color/backround_header_expandable_list"
+                android:textSize="@dimen/s_txt_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll_option_one"
+                android:layout_height="wrap_content">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:id="@+id/tv_option_one_text"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Check out our cool technologically advanced FitStreet clothing."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Select products you want to buy after looking at the discount and cash back details."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Finish your transaction and your cash back will be credited instantly into your account."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+            </LinearLayout>
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 2 :- "
+                android:id="@+id/tv_option_two"
+                android:textAllCaps="true"
+                android:paddingLeft="@dimen/d_mar_extra_large_30dp"
+                android:paddingRight="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:layout_marginTop="@dimen/d_mar_normal_10dp"
+                android:textColor="@color/c_dark_grey"
+                android:background="@color/backround_header_expandable_list"
+                android:textSize="@dimen/s_txt_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll_option_two"
+                android:layout_height="wrap_content">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Tap on start Redeeming."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/d_mar_normal_10dp"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Checkout some awesome products available for sale through our partner’s websites."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Choose the product you like."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Tap on “Buy Now” button and you will be redirected to our partner’s website product page."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Now complete you purchase as you would do normally if directly visiting the website."
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. It’s done, we will be notified about you purchase within 72 hrs and we will credit you cash back amount after the transferring process is completed. "
+                    android:paddingLeft="@dimen/d_mar_normal_10dp"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="@dimen/txt_size_sp12" />
+            </LinearLayout>
+
+            <!--<affle.com.fitstreet.customviews.CustomTypefaceTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Option 3 :- "-->
+            <!--android:textAllCaps="true"-->
+            <!--android:layout_marginTop="@dimen/d_mar_normal_10dp"-->
+            <!--android:id="@+id/tv_option_three"-->
+            <!--android:background="@color/backround_header_expandable_list"-->
+            <!--android:textSize="@dimen/s_txt_16sp"-->
+            <!--android:textColor="@color/c_dark_grey"-->
+            <!--android:paddingLeft="@dimen/d_mar_extra_large_30dp"-->
+            <!--android:paddingRight="@dimen/dp5"-->
+            <!--android:paddingBottom="@dimen/dp5"-->
+            <!--android:paddingTop="@dimen/dp5" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/ll_option_three"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<affle.com.fitstreet.customviews.CustomTypefaceTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="@dimen/d_mar_normal_10dp"-->
+            <!--android:text="1. Go to coupon section at 'Home' page."-->
+            <!--android:paddingRight="@dimen/dp5"-->
+            <!--android:paddingBottom="@dimen/dp5"-->
+            <!--android:textColor="@color/c_gray_text"-->
+            <!--android:textSize="@dimen/txt_size_sp12"-->
+            <!--android:paddingLeft="@dimen/d_mar_normal_10dp" />-->
+
+            <!--<affle.com.fitstreet.customviews.CustomTypefaceTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="2. Checkout the coupons listing under various categories."-->
+            <!--android:paddingLeft="@dimen/d_mar_normal_10dp"-->
+            <!--android:paddingRight="@dimen/dp5"-->
+            <!--android:paddingBottom="@dimen/dp5"-->
+            <!--android:paddingTop="@dimen/dp5"-->
+            <!--android:textColor="@color/c_gray_text"-->
+            <!--android:textSize="@dimen/txt_size_sp12" />-->
+
+            <!--<affle.com.fitstreet.customviews.CustomTypefaceTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="3. Select the coupon and offers you are interested in."-->
+            <!--android:paddingLeft="@dimen/d_mar_normal_10dp"-->
+            <!--android:paddingRight="@dimen/dp5"-->
+            <!--android:paddingBottom="@dimen/dp5"-->
+            <!--android:paddingTop="@dimen/dp5"-->
+            <!--android:textColor="@color/c_gray_text"-->
+            <!--android:textSize="@dimen/txt_size_sp12" />-->
+
+            <!--<affle.com.fitstreet.customviews.CustomTypefaceTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="4. Read the discount and cash back details carefully and tap on “Start Shopping” button."-->
+            <!--android:textColor="@color/c_gray_text"-->
+            <!--android:textSize="@dimen/txt_size_sp12"-->
+            <!--android:paddingLeft="@dimen/d_mar_normal_10dp"-->
+            <!--android:paddingRight="@dimen/dp5"-->
+            <!--android:paddingBottom="@dimen/dp5"-->
+            <!--android:paddingTop="@dimen/dp5" />-->
+
+            <!--<affle.com.fitstreet.customviews.CustomTypefaceTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="5. You will be redirected to the partner’s website where you will have to complete the transaction."-->
+            <!--android:paddingLeft="@dimen/d_mar_normal_10dp"-->
+            <!--android:paddingRight="@dimen/dp5"-->
+            <!--android:paddingBottom="@dimen/dp5"-->
+            <!--android:textColor="@color/c_gray_text"-->
+            <!--android:textSize="@dimen/txt_size_sp12" />-->
+
+            <!--<affle.com.fitstreet.customviews.CustomTypefaceTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="6. It’s done, we will be notified about you purchase within 72 hrs and we will credit you cash back amount after the transferring process is completed."-->
+            <!--android:paddingLeft="@dimen/d_mar_normal_10dp"-->
+            <!--android:paddingRight="@dimen/dp5"-->
+            <!--android:paddingBottom="@dimen/dp5"-->
+            <!--android:textColor="@color/c_gray_text"-->
+            <!--android:textSize="@dimen/txt_size_sp12" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rl_btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_start_redeeming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d_mar_normal_10dp"
+            android:layout_marginLeft="@dimen/d_mar_normal_10dp"
+            android:layout_marginRight="@dimen/d_mar_normal_10dp"
+            android:layout_marginTop="@dimen/d_mar_normal_10dp"
+            android:background="@drawable/x_ds_transparent_stroke_green"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/txt_start_redeeming"
+            android:textColor="@color/c_green_switch"
+            android:textSize="@dimen/s_btn_add_address" />
+
+    </LinearLayout>
+</RelativeLayout>

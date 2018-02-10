@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.CouponsDetailActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--top part-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/horizontal_bar_coupons_detail"
+                android:orientation="vertical"
+                android:showDividers="end">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_weight="50"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_display_image"
+                            android:layout_width="@dimen/s_iv_coupon_detail"
+                            android:layout_height="@dimen/s_iv_coupon_detail"
+                            android:scaleType="fitXY" />
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawablePadding="0dp"
+                            android:singleLine="true"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/location"
+                            android:text=""
+                            android:textSize="@dimen/txt_size_sp12" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp5"
+
+                        android:layout_weight="25"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                                android:id="@+id/tv_title_coupon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textSize="@dimen/txt_size_sp18"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="85"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/ib_heart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/empty_heart" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_description_below_tittle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="@dimen/txt_size_sp15" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--description-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/horizontal_bar_coupons_detail"
+                android:orientation="vertical"
+                android:showDividers="end"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/txt_size_sp15"
+                        android:textStyle="bold" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/txt_size_sp14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--validity-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/horizontal_bar_coupons_detail"
+                android:orientation="vertical"
+                android:showDividers="end"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Validity"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_validity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/txt_size_sp13" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--redeam and extra cashback -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/horizontal_bar_coupons_detail"
+                android:orientation="vertical"
+                android:showDividers="end">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/vertical_devider_coupons_detail"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Points to Redeem"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+
+                            />
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_redeem_points"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text=""
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/txt_size_sp13" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extra Cashback"
+                            android:textAllCaps="true"
+                            android:textStyle="bold" />
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_extra_cashback"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text=""
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/txt_size_sp13" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--view all offers-->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/horizontal_bar_coupons_detail"
+                android:orientation="vertical"
+                android:showDividers="end">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                        android:id="@+id/tv_view_all_offer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/right_arrow"
+                        android:text="View all Mcdonald's offer"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_expand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/horizontal_bar_coupons_detail"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp10">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_coupon_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_coupon_code"
+                            android:background="@drawable/button_border_coupon_code"
+                            android:text=""
+                            android:gravity="center"
+                            android:imeOptions="actionNone"
+                            android:textAllCaps="true"
+                            android:textColor="@color/c_pink_outline"
+                            android:textStyle="bold" />
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Long tap to copy coupon code"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/txt_size_sp12" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/horizontal_bar_coupons_detail"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp10">
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How to avail Cashback :"
+                            android:textAllCaps="true"
+                            android:textStyle="bold" />
+
+                        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                            android:id="@+id/tv_avail_cashback_steps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text=""
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/txt_size_sp13" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <affle.com.fitstreet.customviews.CustomTypefaceButton
+                        android:id="@+id/btn_start_shopping"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_border_start_shopping"
+                        android:text="Start Shopping"
+                        android:textAllCaps="true"
+                        android:textColor="@color/c_gray_text"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

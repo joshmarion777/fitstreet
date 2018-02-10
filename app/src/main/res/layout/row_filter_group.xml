@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_div_filter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_div_elv_filters"
+        android:background="@color/c_bg_filter_popup"
+        android:paddingLeft="@dimen/d_pad_elv_filters"
+        android:paddingRight="@dimen/d_pad_elv_filters" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_title_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/x_sd_group_filter"
+        android:padding="@dimen/d_pad_tv_forgot_pwd_title"
+        android:text="@string/txt_partners"
+        android:textColor="@color/c_txt_filter_popup"
+        android:textSize="@dimen/s_tv_filter_popup" />
+</LinearLayout>

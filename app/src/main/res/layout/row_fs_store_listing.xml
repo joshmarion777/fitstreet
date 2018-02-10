@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_product"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:background="@color/c_white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_favorite_product"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/c_white"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_favourite_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/d_padding_row_favourites"
+            android:src="@drawable/cross_grey"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_share_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_cancel_favourite_product"
+            android:padding="@dimen/d_padding_row_favourites"
+            android:src="@drawable/share"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_set_favourite_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_share_product"
+            android:padding="@dimen/d_padding_row_favourites"
+            android:src="@drawable/empty_heart"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.3"
+                android:padding="@dimen/d_mar_small_5dp"
+                android:singleLine="true"
+                android:text="FitRest Band"
+                android:textAllCaps="true"
+                android:textSize="@dimen/s_txt_coupuns_activity" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_product_discount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="end"
+                android:paddingRight="@dimen/d_mar_small_5dp"
+                android:singleLine="true"
+                android:textColor="@color/c_discount_text_color"
+                android:textSize="@dimen/s_txt_coupuns_activity" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_product_desc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:paddingLeft="@dimen/d_mar_small_5dp"
+                android:layout_weight="1.2"
+                android:maxLines="2"
+                android:text="@string/redeem_fs_points_amp_get_cashback"
+                android:textSize="@dimen/txt_size_sp11" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_product_actual_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:gravity="end"
+                android:paddingRight="@dimen/d_mar_small_5dp"
+                android:paddingTop="@dimen/d_mar_small_5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_size_sp12" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_discounted_price"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="@dimen/d_mar_small_5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/s_txt_coupuns_activity"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/d_mar_small_5dp"
+                android:text="" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

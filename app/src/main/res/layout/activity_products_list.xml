@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.ProductsListActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_search_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_products_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/d_padding_recycler_view" />
+    <!--android:paddingLeft="@dimen/d_padding_recycler_view"-->
+    <!--android:paddingRight="@dimen/d_padding_recycler_view" -->
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/txt_no_data"
+        android:textColor="@color/c_gray_text"
+        android:textSize="@dimen/s_tv_no_data"
+        android:visibility="gone" />
+</LinearLayout>

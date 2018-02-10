@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="affle.com.fitstreet.ui.activities.TutorialActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_pager_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_btns_tutorial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d_mar_cpi_tutorial"
+        android:orientation="horizontal">
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/x_sd_page_indicator"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btns_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/d_pad_ll_tutorial">
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_login"
+            style="@style/btn_splash"
+            android:layout_marginRight="@dimen/d_mar_btn_tutorial"
+            android:background="@drawable/x_ds_transparent_blue"
+            android:text="@string/txt_login" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_sign_up"
+            style="@style/btn_splash"
+            android:layout_marginLeft="@dimen/d_mar_btn_tutorial"
+            android:background="@drawable/x_ds_transparent_pink"
+            android:text="@string/txt_signup" />
+
+    </LinearLayout>
+
+</RelativeLayout>

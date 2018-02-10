@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.fragments.FavouriteFragment">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_search_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_products"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_height_tabs"
+            android:layout_weight="1"
+            android:background="@drawable/x_sd_left_btn_favourite"
+            android:text="@string/txt_btn_products"
+            android:textAllCaps="true"
+            android:textColor="@color/x_sc_tabs_top" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_coupons"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_height_tabs"
+            android:layout_weight="1"
+            android:background="@drawable/x_sd_right_btn_favourite"
+            android:text="@string/txt_btn_coupons"
+            android:textAllCaps="true"
+            android:textColor="@color/x_sc_tabs_top" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_trending_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/d_padding_recycler_view"
+            android:paddingRight="@dimen/d_padding_recycler_view" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_trending_coupons"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/d_padding_recycler_view"
+            android:paddingRight="@dimen/d_padding_recycler_view" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_no_data"
+            android:textColor="@color/c_gray_text"
+            android:textSize="@dimen/s_tv_no_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

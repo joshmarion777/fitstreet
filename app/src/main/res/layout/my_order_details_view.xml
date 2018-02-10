@@ -1,0 +1,63 @@
+<RelativeLayout android:id="@+id/ll_product_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_product_serial"
+        android:layout_width="wrap_content"
+        android:textColor="@color/c_gray_text"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingRight="@dimen/dp10" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_gray_text"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/tv_product_serial" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_product_name"
+        android:layout_alignStart="@id/tv_product_name"
+        android:layout_below="@id/tv_product_name"
+        android:textColor="@color/c_light_gray"
+        android:paddingRight="@dimen/d_mar_normal_10dp"
+        android:text="@string/txt_size" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_name"
+        android:textColor="@color/c_light_gray"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/tv_size_text" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_color_text"
+        android:layout_width="wrap_content"
+        android:textColor="@color/c_light_gray"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_serial"
+        android:layout_marginLeft="@dimen/d_mar_extra_large_70dp"
+        android:layout_toRightOf="@id/tv_size"
+        android:paddingRight="@dimen/d_mar_normal_10dp"
+        android:text="@string/txt_color" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_serial"
+        android:layout_toRightOf="@id/tv_color_text"
+        android:textColor="@color/c_light_gray"
+        android:id="@+id/tv_color"
+        android:singleLine="true" />
+</RelativeLayout>

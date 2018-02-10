@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_filters"
+        android:layout_width="@dimen/d_width_filter_coupon_popup"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_filter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/d_pad_l_iv_toolbar"
+            android:paddingRight="@dimen/d_toolbar_menu_padding"
+            android:src="@drawable/filter_popup_arrow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_white"
+            android:orientation="vertical">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_bg_filter_popup"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_pad_tv_tb_filter"
+                android:paddingLeft="@dimen/d_pad_tv_lr_filter"
+                android:paddingRight="@dimen/d_pad_tv_lr_filter"
+                android:paddingTop="@dimen/d_pad_tv_tb_filter"
+                android:text="@string/txt_filter"
+                android:textColor="@color/c_txt_filter_popup"
+                android:textSize="@dimen/s_tv_filter_popup" />
+
+            <ExpandableListView
+                android:id="@+id/elv_product_filters"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:childDivider="@color/c_transparent"
+                android:divider="@color/c_bg_filter_popup"
+                android:dividerHeight="@dimen/d_div_elv_filters"
+                android:groupIndicator="@null"
+                android:paddingLeft="@dimen/d_pad_elv_filters"
+                android:paddingRight="@dimen/d_pad_elv_filters"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_bg_filter_popup"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_reset"
+                    style="@style/textview_filter_popup_action"
+                    android:paddingBottom="@dimen/d_pad_tv_tb_filter"
+                    android:paddingLeft="@dimen/d_pad_tv_lr_filter"
+                    android:paddingRight="@dimen/d_pad_tv_lr_filter"
+                    android:paddingTop="@dimen/d_pad_tv_tb_filter"
+                    android:text="@string/txt_reset" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_apply"
+                    style="@style/textview_filter_popup_action"
+                    android:paddingBottom="@dimen/d_pad_tv_tb_filter"
+                    android:paddingLeft="@dimen/d_pad_tv_lr_filter"
+                    android:paddingRight="@dimen/d_pad_tv_lr_filter"
+                    android:paddingTop="@dimen/d_pad_tv_tb_filter"
+                    android:text="@string/txt_apply" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

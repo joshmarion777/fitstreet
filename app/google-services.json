@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "665667006268",
+    "firebase_url": "https://fitstreet-55f4c.firebaseio.com",
+    "project_id": "fitstreet-55f4c",
+    "storage_bucket": "fitstreet-55f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665667006268:android:941af709adf1daf7",
+        "android_client_info": {
+          "package_name": "com.fitstreet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665667006268-5ol2iinnakvagjiao2r855iea3v3m4mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb0Uj8koZ3gjW6SF_6N6UcQug6UeACmpM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

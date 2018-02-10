@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/d_pad_image_options"
+    android:paddingLeft="@dimen/d_pad_l_image_options"
+    android:paddingRight="@dimen/d_pad_image_options"
+    android:paddingTop="@dimen/d_pad_image_options">
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/media_type_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/d_pad_image_options"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/s_image_options" />
+
+</LinearLayout>

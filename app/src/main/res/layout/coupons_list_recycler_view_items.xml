@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_coupon_list"
+    android:layout_width="match_parent"
+    android:layout_height="260dp">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_hight_coupon_list"
+        android:layout_marginTop="@dimen/d_mar_padding_recommended"
+        card_view:cardCornerRadius="@dimen/d_radius_card_view_coupons_list">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_hight_coupon_list">
+
+            <ImageView
+                android:id="@+id/iv_coupons_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_height_coupon"
+                android:scaleType="fitXY" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_coupons_validity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/d_padding_coupon_location"
+                android:text="valid upto"
+                android:textColor="@color/c_white" />
+
+            <ImageView
+                android:id="@+id/iv_unfavourite_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/cross_grey"
+                android:visibility="gone" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_coupon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iv_coupons_image"
+                android:padding="@dimen/d_mar_normal_10dp"
+                android:text="FOODIE RESTAURENT" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_coupon_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/iv_coupons_image"
+                android:drawableLeft="@drawable/location"
+                android:padding="@dimen/d_mar_normal_10dp"
+                android:text="aaaaaa" />
+
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_coupon_location"
+                android:paddingLeft="@dimen/d_padding_coupon_location"
+                android:paddingRight="@dimen/d_padding_coupon_location"
+                android:paddingTop="@dimen/d_padding_coupon_location"
+                android:paddingBottom="@dimen/d_mar_small_5dp"
+                android:src="@drawable/share" />
+
+            <ImageView
+                android:id="@+id/iv_set_favourite_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_coupon_location"
+                android:layout_toLeftOf="@id/btn_share"
+                android:paddingBottom="@dimen/d_mar_small_5dp"
+                android:paddingLeft="@dimen/d_padding_coupon_location"
+                android:paddingTop="@dimen/d_padding_coupon_location"
+                android:src="@drawable/empty_heart"
+                android:visibility="gone" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_coupon_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_coupon_name"
+                android:layout_toLeftOf="@id/iv_set_favourite_coupon"
+                android:paddingLeft="@dimen/d_padding_coupon_location"
+                android:paddingRight="@dimen/d_padding_coupon_location"
+                android:paddingTop="@dimen/d_padding_coupon_location"
+                android:paddingBottom="@dimen/d_mar_small_5dp"
+                android:singleLine="true"
+                android:text="FOODIE RESTAURENT" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

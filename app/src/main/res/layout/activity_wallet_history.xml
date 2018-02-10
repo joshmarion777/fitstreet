@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.CashbackHistoryActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:weightSum="2">
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_wallet_received"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_height_tabs"
+            android:layout_weight="1"
+            android:background="@drawable/x_sd_left_btn_favourite"
+            android:text="@string/txt_received"
+            android:textAllCaps="true"
+            android:textColor="@color/x_sc_tabs_top"
+            android:textSize="@dimen/txt_size_sp13" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_wallet_paid"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_height_tabs"
+            android:layout_weight="1"
+            android:background="@drawable/x_sd_right_btn_favourite"
+            android:text="@string/txt_paid"
+            android:textAllCaps="true"
+            android:textColor="@color/x_sc_tabs_top"
+            android:textSize="@dimen/txt_size_sp13" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/c_light_gray" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_no_cashback"
+            android:src="@drawable/nothing_received" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_no_cashback"
+            android:layout_width="match_parent"
+            android:layout_below="@id/iv_no_cashback"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/dp10"
+            android:textAllCaps="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/rv_wallet_history_received"></android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/rv_wallet_history_paid"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</LinearLayout>

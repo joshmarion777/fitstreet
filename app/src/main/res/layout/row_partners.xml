@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/x_sd_partner_filters"
+        android:padding="@dimen/d_pad_tv_partners"
+        android:textColor="@color/c_txt_filter_popup"
+        android:textSize="@dimen/s_tv_filter_partners" />
+
+</RelativeLayout>

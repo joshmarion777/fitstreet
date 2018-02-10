@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="affle.com.fitstreet.ui.activities.SendToBankActivity">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:padding="@dimen/dp20"
+                android:textColor="@color/c_green_switch"
+                android:text="Send your wallet money to your bank account." />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                android:textColor="@color/c_green_switch"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/txt_size_sp14"
+                android:text="@string/account_holder_s_name" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_account_holder_name"
+                android:paddingRight="@dimen/dp20"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_size_sp14"
+                android:textColorHint="@color/c_light_gray"
+                android:maxLength="25"
+                android:hint="@string/enter_account_holder_s_name"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                android:textColor="@color/c_green_switch"
+                android:gravity="center_vertical"
+                android:text="@string/bank_name"
+                android:textSize="@dimen/txt_size_sp14" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_bank_name"
+                android:paddingRight="@dimen/dp20"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/dp20"
+                android:textColorHint="@color/c_light_gray"
+                android:textSize="@dimen/txt_size_sp14"
+                android:hint="@string/enter_your_bank_name"
+                android:maxLength="25"
+                android:paddingBottom="@dimen/dp20" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:textSize="@dimen/txt_size_sp14"
+                android:paddingBottom="@dimen/dp20"
+                android:textColor="@color/c_green_switch"
+                android:gravity="center_vertical"
+                android:text="@string/account_num" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_account_number"
+                android:textSize="@dimen/txt_size_sp14"
+                android:inputType="number"
+                android:hint="@string/enter_your_account_number"
+                android:textColorHint="@color/c_light_gray"
+                android:paddingRight="@dimen/dp20"
+                android:maxLength="25"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                android:textSize="@dimen/txt_size_sp14"
+                android:singleLine="true"
+                android:textColor="@color/c_green_switch"
+                android:gravity="center_vertical"
+                android:text="@string/txt_ifsc_code" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ifsc_code"
+                android:hint="@string/ifsc_code"
+                android:paddingRight="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:singleLine="true"
+                android:textColorHint="@color/c_light_gray"
+                android:paddingBottom="@dimen/dp20"
+                android:maxLength="20"
+                android:textSize="@dimen/txt_size_sp14" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:textSize="@dimen/txt_size_sp14"
+                android:paddingBottom="@dimen/dp20"
+                android:textColor="@color/c_green_switch"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/txt_amount_inr" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_sp14"
+                android:id="@+id/et_amoun_send_to_bank"
+                android:singleLine="true"
+                android:hint="@string/enter_amount"
+                android:paddingRight="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                android:textColorHint="@color/c_light_gray"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceButton
+                android:id="@+id/btn_send_to_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d_mar_small_5dp"
+                android:layout_marginLeft="@dimen/d_mar_normal_10dp"
+                android:layout_marginRight="@dimen/d_mar_normal_10dp"
+                android:layout_marginTop="@dimen/d_mar_small_5dp"
+                android:background="@drawable/x_ds_transparent_stroke_pink"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="@string/txt_send"
+                android:textAllCaps="true"
+                android:textColor="@color/c_pink_outline"
+                android:textSize="@dimen/s_btn_add_address" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

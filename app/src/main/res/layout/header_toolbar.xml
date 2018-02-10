@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/c_green_switch"
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetStart="0dp"
+    android:elevation="@dimen/d_elev_toolbar"
+    android:titleTextColor="@color/c_white"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_navigation_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/d_toolbar_menu_padding"
+            android:src="@drawable/menu" />
+
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="@dimen/d_pad_title_toolbar"
+            android:textColor="@color/c_white"
+            android:textSize="@dimen/s_tv_title" />
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d_mar_lr_toolbar"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_toolbar_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/d_toolbar_menu_padding"
+                android:paddingLeft="@dimen/d_pad_l_iv_toolbar"
+                android:paddingRight="@dimen/d_toolbar_menu_padding"
+                android:paddingTop="@dimen/d_toolbar_menu_padding"
+                android:src="@drawable/big_heart" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_toolbar_favourite_count"
+                android:layout_width="@dimen/s_notification_circle_width"
+                android:layout_height="@dimen/s_notification_circle_height"
+                android:layout_alignRight="@+id/iv_toolbar_favourite"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/d_mar_tv_fav"
+                android:layout_marginTop="@dimen/d_mar_tv_fav"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/txt_success_set_favourite_count"
+                android:textColor="@color/c_white"
+                android:textSize="@dimen/s_tv_fav_count"
+                android:visibility="visible"
+                app:font_name_with_asset_path="@string/font_roboto_bold"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rl_toolbar_favourite"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_toolbar_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/d_toolbar_menu_padding"
+                android:paddingLeft="@dimen/d_pad_l_iv_toolbar"
+                android:paddingRight="@dimen/d_toolbar_menu_padding"
+                android:paddingTop="@dimen/d_toolbar_menu_padding"
+                android:src="@drawable/filter" />
+
+            <ImageView
+                android:id="@+id/iv_toolbar_filter_active"
+                android:layout_width="@dimen/s_notification_circle_width"
+                android:layout_height="@dimen/s_notification_circle_height"
+                android:layout_alignRight="@+id/iv_toolbar_filter"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/d_mar_tv_fav"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/d_mar_tv_fav"
+                android:background="@drawable/x_ds_filter_active" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar_mycart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/rl_toolbar_filter"
+            android:layout_centerVertical="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_toolbar_mycart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/d_toolbar_menu_padding"
+                android:src="@drawable/my_cart" />
+
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_toolbar_cart_count"
+                android:layout_width="@dimen/s_notification_circle_width"
+                android:layout_height="@dimen/s_notification_circle_height"
+                android:layout_alignRight="@id/iv_toolbar_mycart"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/txt_success_set_favourite_count"
+                android:textColor="@color/c_white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_toolbar_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/rl_toolbar_mycart"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="@dimen/d_mar_lr_toolbar"
+            android:clickable="true"
+            android:padding="@dimen/d_mar_normal_10dp"
+            android:src="@drawable/white_share"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="affle.com.fitstreet.ui.activities.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_tabs_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/d_mar_small_5dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ProgressBar
+                    android:id="@+id/pb_iv_big_row_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/iv_big_row_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/d_mar_small_5dp"
+                    android:padding="@dimen/d_mar_small_5dp"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/v_iv_big_row_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/iv_big_row_first"
+                    android:layout_alignLeft="@+id/iv_big_row_first"
+                    android:layout_alignRight="@+id/iv_big_row_first"
+                    android:layout_alignTop="@+id/iv_big_row_first"
+                    android:background="@drawable/overlay_home_tab"
+                    android:visibility="visible" />
+
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_big_row_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:layout_marginRight="@dimen/d_mar_small_5dp"
+                    android:padding="@dimen/d_padding_coupns_fragment"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_coupons_fragment"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <ProgressBar
+                    android:id="@+id/pb_iv_small_first_row_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_small_first_row_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/d_mar_small_5dp"
+                    android:padding="@dimen/d_mar_small_5dp" />
+
+                <View
+                    android:id="@+id/v_iv_small_first_row_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/iv_small_first_row_first"
+                    android:layout_alignLeft="@+id/iv_small_first_row_first"
+                    android:layout_alignRight="@+id/iv_small_first_row_first"
+                    android:layout_alignTop="@+id/iv_small_first_row_first"
+                    android:background="@drawable/overlay_home_tab"
+                    android:visibility="visible" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_small_first_row_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/d_padding_coupns_fragment"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_coupons_fragment"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <ProgressBar
+                    android:id="@+id/pb_iv_small_second_row_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_small_second_row_first"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/d_mar_small_5dp"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/v_iv_small_second_row_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/iv_small_second_row_first"
+                    android:layout_alignLeft="@+id/iv_small_second_row_first"
+                    android:layout_alignRight="@+id/iv_small_second_row_first"
+                    android:layout_alignTop="@+id/iv_small_second_row_first"
+                    android:background="@drawable/overlay_home_tab"
+                    android:visibility="visible" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_small_second_row_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/d_padding_coupns_fragment"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_coupons_fragment"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <ProgressBar
+                    android:id="@+id/pb_iv_big_row_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_big_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/d_mar_small_5dp"
+                    android:padding="@dimen/d_mar_small_5dp" />
+
+                <View
+                    android:id="@+id/v_iv_big_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/iv_big_row_second"
+                    android:layout_alignLeft="@+id/iv_big_row_second"
+                    android:background="@drawable/overlay_home_tab"
+                    android:layout_alignRight="@+id/iv_big_row_second"
+                    android:layout_alignTop="@+id/iv_big_row_second"
+                    android:visibility="visible" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_big_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/d_padding_coupns_fragment"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_coupons_fragment"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <ProgressBar
+                    android:id="@+id/pb_iv_small_first_row_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_small_first_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/d_mar_small_5dp"
+                    android:padding="@dimen/d_mar_small_5dp" />
+
+                <View
+                    android:id="@+id/v_iv_small_first_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/iv_small_first_row_second"
+                    android:layout_alignLeft="@+id/iv_small_first_row_second"
+                    android:layout_alignRight="@+id/iv_small_first_row_second"
+                    android:background="@drawable/overlay_home_tab"
+                    android:layout_alignTop="@+id/iv_small_first_row_second"
+                    android:visibility="visible" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_small_first_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/d_padding_coupns_fragment"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_coupons_fragment"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ProgressBar
+                    android:id="@+id/pb_iv_small_second_row_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_small_second_row_second"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/d_mar_small_5dp"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/v_iv_small_second_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/iv_small_second_row_second"
+                    android:layout_alignLeft="@+id/iv_small_second_row_second"
+                    android:layout_alignRight="@+id/iv_small_second_row_second"
+                    android:background="@drawable/overlay_home_tab"
+                    android:layout_alignTop="@+id/iv_small_second_row_second"
+                    android:visibility="visible" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_small_second_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/d_padding_coupns_fragment"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/s_txt_coupons_fragment"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

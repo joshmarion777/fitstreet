@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.RecommendedActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_search_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_Recommended"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/d_mar_padding_recommended" />
+</LinearLayout>

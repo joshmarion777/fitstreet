@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_bg_rl_addresses"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MyAddressesActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_address_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/d_pad_tb_address_count"
+        android:paddingLeft="@dimen/d_pad_lr_address_count"
+        android:paddingRight="@dimen/d_pad_lr_address_count"
+        android:paddingTop="@dimen/d_pad_tb_address_count"
+        android:textColor="@color/c_tv_address_row_grey"
+        android:textSize="@dimen/s_tv_address_count" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/c_bg_rl_addresses"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_addresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_no_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_mar_iv_no_addresses"
+            android:drawablePadding="@dimen/d_dpad_tv_no_address"
+            android:drawableTop="@drawable/address_book"
+            android:gravity="center"
+            android:text="@string/txt_no_addresses"
+            android:textSize="@dimen/s_tv_no_address"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <affle.com.fitstreet.customviews.CustomTypefaceButton
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_mar_btn_add_address"
+        android:background="@drawable/x_ds_transparent_stroke_blue"
+        android:text="@string/txt_add_new_address"
+        android:textColor="@color/c_blue_outline"
+        android:textSize="@dimen/s_btn_add_address" />
+
+</LinearLayout>

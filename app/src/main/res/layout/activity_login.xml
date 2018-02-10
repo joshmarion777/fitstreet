@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_bg_login_sign_up"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.SignUpActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/d_elev_toolbar">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/c_transparent"
+            android:src="@drawable/back" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_pad_title_toolbar"
+            android:textColor="@color/c_white" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d_mar_ll_login_signup"
+            android:layout_marginRight="@dimen/d_mar_ll_login_signup"
+            android:orientation="vertical">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/d_mar_login_title"
+                android:drawablePadding="@dimen/d_dpad_login_txt"
+                android:drawableTop="@drawable/logo_splash"
+                android:gravity="center"
+                android:padding="@dimen/d_pad_login_txt"
+                android:text="@string/txt_fit_street"
+                android:textColor="@color/c_blue_text"
+                android:textSize="@dimen/s_txt_login_title"
+                app:font_name_with_asset_path="@string/font_orator_std" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                android:id="@+id/et_email_id"
+                style="@style/edittext_login_sign_up"
+                android:hint="@string/hint_email_id"
+                android:inputType="textEmailAddress" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceEditText
+                android:id="@+id/et_password"
+                style="@style/edittext_login_sign_up"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_mar_btn_login"
+                android:background="@drawable/x_ds_grey_pink"
+                android:gravity="center"
+                android:padding="@dimen/d_pad_btn_login_sign_up"
+                android:text="@string/txt_login"
+                android:textAllCaps="true"
+                android:textColor="@color/c_white"
+                android:textSize="@dimen/s_tv_login_options" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/d_mar_tv_forgot_pwd"
+                android:layout_marginTop="@dimen/d_mar_tv_forgot_pwd"
+                android:text="@string/txt_forgot_password"
+                android:textColor="@color/c_txt_forgot_pwd"
+                android:textSize="@dimen/s_txt_forgot_pwd" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

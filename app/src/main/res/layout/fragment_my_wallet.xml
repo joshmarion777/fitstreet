@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp55"
+    android:background="@color/c_too_light_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_wallet_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_height_wallet_image"
+            android:background="@drawable/wallet_graphic"
+            android:scaleType="fitXY" />
+
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_wallet_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/dp20"
+            android:text="@string/txt_cashback_description" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/total_wallet_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/c_white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/dp20"
+            android:text="@string/txt_total_wallet_text"
+            android:textAllCaps="true"
+            android:textColor="@color/c_black"
+            android:textSize="@dimen/s_txt_16sp" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:id="@+id/tv_wallet_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/c_white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp20"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/d_mar_small_5dp"
+            android:text="@string/rs"
+            android:textColor="@color/c_black"
+            android:textSize="@dimen/s_txt_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_cashback_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/c_white"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/d_mar_small_5dp"
+                    android:singleLine="true"
+                    android:text="@string/cashback"
+                    android:textAllCaps="true"
+                    android:textColor="@color/c_black"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_cashback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/c_white"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/d_mar_small_5dp"
+                    android:text="@string/history"
+                    android:textAllCaps="true"
+                    android:textColor="@color/c_black"
+                    android:textSize="@dimen/txt_size_sp12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cancellation_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/c_white"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/d_mar_small_5dp"
+                    android:singleLine="true"
+                    android:text="@string/refund"
+                    android:textAllCaps="true"
+                    android:textColor="@color/c_black"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_cancellation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/c_white"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/d_mar_small_5dp"
+                    android:singleLine="true"
+                    android:text="@string/history"
+                    android:textAllCaps="true"
+                    android:textColor="@color/c_black"
+                    android:textSize="@dimen/txt_size_sp12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_prize_money_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/c_white"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/d_mar_small_5dp"
+                    android:singleLine="true"
+                    android:text="@string/prize_money"
+                    android:textAllCaps="true"
+                    android:textColor="@color/c_black"
+                    android:textSize="@dimen/txt_size_sp12" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_prize_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/c_white"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/d_mar_small_5dp"
+                    android:singleLine="true"
+                    android:text="@string/history"
+                    android:textAllCaps="true"
+                    android:textColor="@color/c_black"
+                    android:textSize="@dimen/txt_size_sp12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_wallet_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_mar_lr_logout"
+            android:layout_marginRight="@dimen/d_mar_lr_logout"
+            android:background="@drawable/x_ds_transparent_stroke_green_no_white_background"
+            android:padding="@dimen/d_pad_logout"
+            android:text="@string/txt_wallet_history"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/c_green_switch"
+            android:textSize="@dimen/s_logout" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_send_to_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_mar_lr_logout"
+            android:layout_marginRight="@dimen/d_mar_lr_logout"
+            android:layout_marginTop="@dimen/d_mar_normal_10dp"
+            android:background="@drawable/x_ds_transparent_stroke_pink"
+            android:padding="@dimen/d_pad_logout"
+            android:text="@string/txt_send_to_bank"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/c_pink_outline"
+            android:textSize="@dimen/s_logout" />
+
+
+    </LinearLayout>
+</ScrollView>

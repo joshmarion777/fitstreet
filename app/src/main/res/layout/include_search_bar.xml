@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_cross_search"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dp10"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:src="@drawable/cross_grey" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceEditText
+        android:id="@+id/et_search"
+        android:layout_toLeftOf="@id/iv_cross_search"
+        style="@style/edit_text_search" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_elev_toolbar"
+        android:layout_below="@id/et_search"
+        android:background="@drawable/x_ds_drop_shadow" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="affle.com.fitstreet.ui.activities.AppTutorialActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_pager_indicator"
+        android:layout_width="30dp"
+        android:background="@color/c_gray_text"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/d_mar_normal_10dp"
+        android:layout_height="200dp"
+        android:padding="@dimen/d_mar_normal_10dp"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/c_green_switch"
+        android:id="@+id/view_green"
+        android:layout_alignParentBottom="true"></View>
+
+    <affle.com.fitstreet.customviews.AppTutorialViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_green"
+        android:id="@+id/vp_app_tutorial">
+
+    </affle.com.fitstreet.customviews.AppTutorialViewPager>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_next_row"
+        android:layout_marginBottom="@dimen/d_mar_normal_10dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/next_arrow" />
+
+
+</RelativeLayout>

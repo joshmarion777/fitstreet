@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.ChooseLocationActivity">
+
+    <include layout="@layout/include_toolbar_choose_location" />
+
+    <ListView
+        android:id="@+id/lv_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/c_settings_div"
+        android:dividerHeight="@dimen/d_size_line_div"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_position" type="id"/>
+    <item name="tag_position_challenge" type="id" />
+    <item name="tag_position_cart" type="id"/>
+    <item name="tag_cart_quantity" type="id" />
+</resources>

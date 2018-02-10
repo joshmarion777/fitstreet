@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/d_bottom_layout_height">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceAutoCompleteTextView
+                    android:id="@+id/at_search"
+                    style="@style/edit_text_search" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_cross_search"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp10"
+                    android:visibility="gone"
+                    android:src="@drawable/cross_grey" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_elev_toolbar"
+                    android:background="@drawable/x_ds_drop_shadow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_height_product_images">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/ll_pager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/d_mar_small_5dp"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_shop_men"
+            android:padding="@dimen/d_mar_normal_10dp"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/d_mar_normal_10dp"
+            android:paddingRight="@dimen/d_mar_normal_10dp"
+            android:layout_height="@dimen/d_height_product_images"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_shop_men" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_mar_normal_10dp"
+            android:text="@string/txt_shop_women_fs_store_title"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:paddingLeft="@dimen/d_mar_normal_10dp"
+            android:id="@+id/iv_shop_women"
+            android:paddingRight="@dimen/d_mar_normal_10dp"
+            android:paddingBottom="@dimen/d_mar_normal_10dp"
+            android:layout_height="@dimen/d_height_product_images" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/include_toolbar"
+            android:id="@+id/toolbar"></include>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/no_notification"
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txt_size_sp15"
+                android:gravity="center"
+                android:text="@string/no_new_notification"
+                android:id="@+id/iv_no_new_notification" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_clear_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/clear_all"
+                android:visibility="gone"
+                android:textSize="@dimen/txt_size_sp15"
+                android:padding="@dimen/d_mar_normal_10dp"
+                android:textColor="#59aac4" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_notifications"
+                android:layout_below="@+id/tv_clear_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

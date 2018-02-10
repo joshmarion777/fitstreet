@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activities.HomeActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_tap_on_runkeeper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_on_runkeeper_to_connect"
+                    android:textColor="@color/green" />
+
+                <ImageView
+                    android:id="@+id/iv_runkeeper"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_below="@id/tv_tap_on_runkeeper"
+                    android:src="@drawable/runkeeper" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_connect_runkeeper"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    custom:font_name_with_asset_path="fonts/Roboto-Bold.ttf"
+                    android:textColor="@color/c_green_switch"
+                    android:padding="@dimen/dp20"
+                    android:textSize="@dimen/s_txt_16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_tap_on_fitbit"
+                    android:text="@string/tap_on_fitbit_to_connect"
+                    android:textColor="@color/green" />
+
+                <ImageView
+                    android:id="@+id/iv_fitbit"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_below="@id/tv_tap_on_fitbit"
+                    android:src="@drawable/fitbit" />
+
+                <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                    android:id="@+id/tv_connect_fitbit"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingRight="@dimen/dp20"
+                    custom:font_name_with_asset_path="fonts/Roboto-Bold.ttf"
+                    android:textColor="@color/c_green_switch"
+                    android:padding="@dimen/dp20"
+                    android:textSize="@dimen/s_txt_16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

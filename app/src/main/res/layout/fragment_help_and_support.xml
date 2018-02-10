@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/iv_help_support"
+        android:scaleType="fitXY"
+        android:src="@drawable/help_image" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_contact_us"
+        style="@style/textview_my_account"
+        android:drawableLeft="@drawable/contact"
+        android:text="@string/txt_contact_us"
+        android:textColor="@color/c_gray_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c_light_gray"></View>
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_faq"
+        style="@style/textview_my_account"
+        android:drawableLeft="@drawable/faq"
+        android:text="@string/txt_faq"
+        android:textColor="@color/c_gray_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/c_light_gray" />
+</LinearLayout>

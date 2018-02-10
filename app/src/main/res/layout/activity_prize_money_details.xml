@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_no_prize_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nothing_received"
+        android:visibility="gone" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_iv_no_prize_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_no_prize_money"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="@string/no_prize_money"
+        android:textAllCaps="true"
+        android:visibility="gone" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_total_prize_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:gravity="end"
+        android:padding="@dimen/dp10"
+        android:text="@string/total_refund"
+        android:textAllCaps="true"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_total_prize_money"
+        android:layout_centerHorizontal="true"
+        android:background="@color/c_light_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_prize_money_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:visibility="gone" />
+</RelativeLayout>

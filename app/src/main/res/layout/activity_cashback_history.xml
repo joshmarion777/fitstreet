@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="affle.com.fitstreet.ui.activities.CashbackHistoryActivity">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:id="@+id/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_no_cancellation"
+        android:src="@drawable/no_cashback" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_no_cancellation"
+        android:layout_width="match_parent"
+        android:layout_below="@id/iv_no_cancellation"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/dp10"
+        android:text="@string/you_got_no_cashback"
+        android:textAllCaps="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:id="@+id/ll_completed_pending_buttons"
+        android:layout_below="@id/toolbar"
+        android:padding="@dimen/dp10"
+        android:weightSum="2">
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_completed_cashback"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_height_tabs"
+            android:layout_weight="1"
+            android:background="@drawable/x_sd_left_btn_favourite"
+            android:text="@string/txt_completed"
+            android:textAllCaps="true"
+            android:textColor="@color/x_sc_tabs_top"
+            android:textSize="@dimen/txt_size_sp13" />
+
+        <affle.com.fitstreet.customviews.CustomTypefaceButton
+            android:id="@+id/btn_pending_cashback"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_height_tabs"
+            android:layout_weight="1"
+            android:background="@drawable/x_sd_right_btn_favourite"
+            android:text="@string/txt_pending"
+            android:textAllCaps="true"
+            android:textColor="@color/x_sc_tabs_top"
+            android:textSize="@dimen/txt_size_sp13" />
+    </LinearLayout>
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_total_cashback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_completed_pending_buttons"
+        android:gravity="end"
+        android:padding="@dimen/dp10"
+        android:visibility="gone"
+        android:text="@string/total_cashback"
+        android:textAllCaps="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_total_cashback"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view_line"
+        android:background="@color/c_light_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:visibility="gone"
+        android:id="@+id/rv_cashback_history_completed"></android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:visibility="gone"
+        android:id="@+id/rv_cashback_history_pending"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

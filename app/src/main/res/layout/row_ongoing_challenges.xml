@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/d_pad_rl_challenge_row">
+
+    <ImageView
+        android:id="@+id/iv_challenge"
+        android:layout_width="@dimen/s_iv_challeges"
+        android:layout_height="@dimen/s_iv_challeges"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/d_pad_iv_challenge"
+        android:scaleType="fitXY" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_challenge_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_challenge"
+        android:layout_marginBottom="@dimen/d_mar_lb_tv_challenge"
+        android:layout_toRightOf="@id/iv_challenge"
+        android:singleLine="true"
+        android:text="Cycle Challege"
+        android:textAllCaps="true"
+        android:textSize="@dimen/s_txt_challenge_name"
+        android:textStyle="bold"
+        app:font_name_with_asset_path="@string/font_roboto_bold" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_challenge_tagtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_challenge_name"
+        android:layout_below="@id/tv_challenge_name"
+        android:layout_marginBottom="@dimen/d_mar_lb_tv_challenge"
+        android:layout_marginLeft="@dimen/d_mar_lb_tv_challenge"
+        android:singleLine="true"
+        android:text="Cycle Challege"
+        android:textAllCaps="false"
+        android:textSize="@dimen/s_txt_remaining_days" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_challenge"
+        android:layout_alignLeft="@+id/tv_challenge_tagtext"
+        android:drawableLeft="@drawable/multi_user"
+        android:drawablePadding="@dimen/d_mar_normal_10dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/d_mar_normal_10dp"
+        android:singleLine="true"
+        android:text="123,456,333"
+        android:textAllCaps="true"
+        android:textSize="@dimen/s_txt_remaining_days" />
+
+    <affle.com.fitstreet.customviews.CustomTypefaceTextView
+        android:id="@+id/tv_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_challenge"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/d_mar_normal_10dp"
+        android:gravity="right|center_vertical"
+        android:singleLine="true"
+        android:text="vcds0"
+        android:textAllCaps="false"
+        android:textSize="@dimen/s_txt_remaining_days" />
+
+
+    <affle.com.fitstreet.customviews.CustomTypefaceButton
+        android:id="@+id/btn_join_challenge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_height_join"
+        android:layout_alignLeft="@+id/tv_challenge_name"
+        android:layout_below="@+id/iv_challenge"
+        android:background="@drawable/x_ds_green_outline"
+        android:gravity="center"
+        android:text="@string/txt_join_challenge"
+        android:textAllCaps="false"
+        android:textColor="@color/c_green_switch"
+        android:textSize="@dimen/s_tv_challenge_join" />
+
+</RelativeLayout>

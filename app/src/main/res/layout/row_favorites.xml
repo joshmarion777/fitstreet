@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_product"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:background="@color/c_white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_favorite_product"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/c_white"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_favourite_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/d_padding_row_favourites"
+            android:src="@drawable/cross_grey"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_share_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_cancel_favourite_product"
+            android:padding="@dimen/d_padding_row_favourites"
+            android:src="@drawable/share"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_set_favourite_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_share_product"
+            android:padding="@dimen/d_padding_row_favourites"
+            android:src="@drawable/empty_heart"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:paddingLeft="@dimen/d_mar_small_5dp"
+                android:paddingBottom="@dimen/d_mar_small_5dp"
+                android:paddingTop="@dimen/d_mar_small_5dp"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txt_size_sp12" />
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:gravity="end"
+                android:paddingRight="@dimen/d_mar_small_5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_size_sp12" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <affle.com.fitstreet.customviews.CustomTypefaceTextView
+                android:id="@+id/tv_product_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingLeft="@dimen/d_mar_small_5dp"
+                android:text="Redeem FS Points &amp; Get Cashback"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
